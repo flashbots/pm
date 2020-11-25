@@ -7,9 +7,11 @@ Flashbots research and development are tightly-coupled dual engines that propel 
 - **Long-term oriented research effort:** They spec out and update our roadmap, define our organization’s phases and identify key milestones associated with each of them;
 - **Milestone-oriented engineering effort:** They are organized as product-focused teams that ship core infrastructure and ecosystem tools, while collecting data and producing other artifacts that feed back into research.
 
+![FlashbotsOrg](FlashbotsOrgChart.png)
+
 ## MEV Roast
 ### Purpose
 MEV Roast is a semi-monthly discussion that stems from the research collective MEV Pi-rate Ship tradition. It's meant to service as a communication bridge between Flashbots and the broader community interested in understanding MEV and contribute to our research and engineering efforts. The format of our Roast is meant to invite constructive criticism on the Flashbots efforts and to address open questions. 
 | No. |Date | Roast Master | Agenda | Notes | Recording |
 |:---|:---|:---|---|---|:---|
-8 | Nov 25 | @danrobinson | [agenda](https://github.com/flashbots/pm/issues/1) | notes | to be updated |
+8 | Nov 25 | @danrobinson | [agenda](https://github.com/flashbots/pm/issues/1) | [Slides](https://docs.google.com/presentation/d/1R0P-ypkiPJw-re0oKlkXkCF03UaVq_0fVnO9J0ewh1Q/edit?usp=sharing) | to be updated |
