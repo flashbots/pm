@@ -1,5 +1,8 @@
 # mev-geth: proof of concept
 
+[![hackmd-github-sync-badge](https://hackmd.io/sgOFihNoRTCuzqwzw9R39g/badge)](https://hackmd.io/sgOFihNoRTCuzqwzw9R39g)
+
+
 | Project  | Phase            | Deadline   | Navigator  | Description                                       |
 | -------- | ---------------- | ---------- | ---------- | ------------------------------------------------- |
 | mev-geth | proof of concept | 30/10/2020 | @thegostep | Production ready proof of concept for mev-extract |
