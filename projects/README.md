@@ -1,5 +1,8 @@
 # Engineering Projects
 
+[![hackmd-github-sync-badge](https://hackmd.io/0e2rS7UoSb6QJsAZ5CqmiA/badge)](https://hackmd.io/0e2rS7UoSb6QJsAZ5CqmiA)
+
+
 ```graphviz
 digraph hierarchy {
 
