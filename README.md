@@ -36,4 +36,4 @@ MEV Roast is a semi-monthly discussion that stems from the research collective M
 9 | Dec 16 | Dan Elitzer | [agenda](https://github.com/flashbots/pm/issues/2) | [slides](https://docs.google.com/presentation/d/1fh-kdjnR-R6qpl3NE4wb6w2OAuMGBbSykKeCzM0ga6g/edit?usp=sharing) | [video](https://drive.google.com/file/d/1V2tJB6j7DVkQ9YKTShA5KACJNAk0kZje/view?usp=sharing) |
 
 ### Subscribe to MEV Ship Calendar
-</br> You can follow the latest updates and events by subscribing to our [MEV Ship Calendar](https://calendar.google.com/calendar/u/0/embed?src=c_7lurqn12ecl64li0ms3kse5vok@group.calendar.google.com): join us on our semi-monthly community call “MEV Ship Treasure Map Roast”, Flashbots core dev call, weekly research workshop, and the upcoming unconference: MEV.wtf
+You can catch up on our latest community events by subscribing to the [MEV Ship Calendar](https://calendar.google.com/calendar/u/0/embed?src=c_7lurqn12ecl64li0ms3kse5vok@group.calendar.google.com): join us on our semi-monthly community call _MEV Roast_, our monthly Flashbots core dev call, weekly research workshop, and the upcoming unconference: MEV.wtf
