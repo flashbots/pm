@@ -24,7 +24,7 @@ Flashbots research and development are tightly-coupled dual engines that propel 
 </br> If you are a DeFi trader or run bots, we invite you to test out Flashbots and start submitting MEV bundles. Join our [Flashbots discord](https://discord.gg/3TjWjBerRb) community of MEV searchers, or contact us at info@flashbots.net
 
 ## Contribute to MEV-Research
-</br> We invite you to review our [MEV-Research GitHub repo](https://github.com/flashbots/mev-research) repo to learn about our MEV Fellowship program. Start contributing through opening or answering a Github issue, and/or writing a Flashbots Research Proposal (FRP) to co-author our research papers and/or apply for a research grant, and join our discussion on our [MEV-Research discord](https://discord.gg/9yuuZendEy) community.
+</br> We invite you to review our [MEV-Research](https://github.com/flashbots/mev-research) repo to learn about our MEV Fellowship program. Start contributing through opening or answering a Github issue, and/or writing a Flashbots Research Proposal (FRP) to co-author our research papers and/or apply for a research grant, and join our discussion on our [MEV-Research discord](https://discord.gg/9yuuZendEy) community.
 
 ## Join the MEV party!
 
