@@ -10,6 +10,11 @@ These measures are necessary for the public beta but may be changed in the futur
 - **Keep gas limits low**: For bot-signed transactions, keep gas limits as low as possible. Avoiding excessively large gas limits will help mev-relay estimate the upper-bound of evm processing requirements
 - **Submit bundles with relevant transactions**: While a bundle could theoretically contain a block's worth of transactions, this is not necessary as miners will order standard pending transactions behind your bundle for maximum profitability
 
+Some important notes:
+- `relay.flashbots.net` retains detailed logs of all bundles including the IP address of the sender and the content of the bundles
+- `relay.flashbots.net` maintains a whitelist of trusted miners and we will remove miners if they are found to misbehave
+- `relay.flashbots.net` maintains a whitelist of searchers and we will remove searchers if they are found to misbehave
+
 ## Application Form
 
 To sign up and receive your API keys, please fill [this form](https://docs.google.com/forms/d/e/1FAIpQLSd4AKrS-vcfW1X-dQvkFY73HysoKfkhcd-31Tj8frDAU6D6aQ/viewform).
