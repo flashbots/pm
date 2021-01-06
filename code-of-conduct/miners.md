@@ -1,2 +1,0 @@
-# Miner code of conduct
-
