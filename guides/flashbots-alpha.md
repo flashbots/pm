@@ -171,9 +171,8 @@ To get the full benefit of using flashbots, it is beneficial to transition from 
 
 * A technical overview of Flashbots the organization: https://ethresear.ch/t/flashbots-frontrunning-the-mev-crisis/8251
 * Our values and what we stand for: https://medium.com/flashbots/frontrunning-the-mev-crisis-40629a613752
-* Example arbitrage searcher: https://bit.ly/3hGbDtk
+* Example arbitrage searcher: https://github.com/flashbots/simple-arbitrage
 * MEV-Relay repo: https://github.com/flashbots/mev-relay-js
-* Flashbots ethers.js provider: https://bit.ly/2MpNFXI
-* Searcher FAQ: https://bit.ly/2Xb3FiI
-* Ask any questions in the [#🤖-searchers channel](https://discord.gg/d9XYzHA4hM) on our Discord 
+* Flashbots ethers.js provider: https://github.com/flashbots/ethers-provider-flashbots-bundle
+* Ask any questions in the [#🤖searchers](https://discord.gg/d9XYzHA4hM) channel on our Discord 
 
