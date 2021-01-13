@@ -50,6 +50,7 @@ If you are a miner and/or mining pool, we invite you to try Flashbots during thi
 - Dedicated Flashbots Discord channel [#🤖mev-geth](https://discord.gg/neqxEYrA) .
 
 ### Onboard Flashbots Alpha as a Trader
+
 If you are a DeFi trader or run bots, we invite you to test out Flashbots Alpha and start submitting MEV transaction bundles.
 
 You can start submitting transaction bundles on mainnet by following these steps:
@@ -57,7 +58,8 @@ You can start submitting transaction bundles on mainnet by following these steps
 2. Apply for an [API key](https://forms.gle/1uunzbhhZQP1BKtdA)
 3. Update your searcher scripts to send bundles to `relay.flashbots.net` or directly to miners' RPC endpoints
 
-Here are the resources currently available to help you write a searcher:
+#### Resources to write a MEV searcher:
+
 - Example arbitrage searcher: https://github.com/flashbots/simple-arbitrage
 - Flashbots ethers.js provider: https://github.com/flashbots/ethers-provider-flashbots-bundle
 - Searcher FAQ: https://github.com/flashbots/pm/blob/main/guides/flashbots-alpha.md
