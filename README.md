@@ -8,7 +8,7 @@ Flashbots research and development are tightly-coupled dual engines that propel 
 - **Long-term oriented research effort:** They spec out and update our roadmap, define our organization’s phases and identify key milestones associated with each of them;
 - **Milestone-oriented engineering effort:** They are organized as product-focused teams that ship core infrastructure and ecosystem tools, while collecting data and producing other artifacts that feed back into research.
 
-![FlashbotsOrg](FlashbotsOrgChart.png)
+![FlashbotsOrg](Flashbots_org.png)
 
 ## Flashbots Proof-of-concept (PoC)
 </br> We have designed and implemented a proof of concept for permissionless MEV extraction called MEV-Geth. It is a sealed-bid block space auction mechanism for communicating transaction order preference. While our proof of concept has incomplete trust guarantees, we believe it's a significant improvement over the status quo. Find out more about Flashbots architecture and implementation in our [ethresearch post](https://ethresear.ch/t/flashbots-frontrunning-the-mev-crisis/8251).
@@ -79,7 +79,7 @@ MEV Roast is a semi-monthly discussion that stems from the research collective M
 |:---|:---|:---|---|---|:---|
 8 | Nov 25 | @danrobinson | [agenda](https://github.com/flashbots/pm/issues/1) | [slides](https://docs.google.com/presentation/d/1R0P-ypkiPJw-re0oKlkXkCF03UaVq_0fVnO9J0ewh1Q/edit?usp=sharing) | [video](https://drive.google.com/file/d/1bMwtTKtOITYr2DV_59RngOQADL4I3cWR/view?usp=sharing) |
 9 | Dec 16 | Dan Elitzer | [agenda](https://github.com/flashbots/pm/issues/2) | [slides](https://docs.google.com/presentation/d/1fh-kdjnR-R6qpl3NE4wb6w2OAuMGBbSykKeCzM0ga6g/edit?usp=sharing) | [video](https://drive.google.com/file/d/1V2tJB6j7DVkQ9YKTShA5KACJNAk0kZje/view?usp=sharing) |
-10 | Jan 13 | Tom Schmidt | [agenda](https://github.com/flashbots/pm/issues/3) | to-be-updated | to-be-updated |
+10 | Jan 13 | Tom Schmidt | [agenda](https://github.com/flashbots/pm/issues/3) | [slides](https://docs.google.com/presentation/d/1G-mzdBUnEODZnNBhy8yppF2LBImVy9-F39FFCeypoAA/edit?usp=sharing) | [video](https://drive.google.com/file/d/1s7L4vToP5v5_j5rpqES8CYzyF7mOto5Z/view?usp=sharing) |
 
 ### Subscribe to MEV Ship Calendar
 
