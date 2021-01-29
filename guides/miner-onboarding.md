@@ -13,7 +13,7 @@
 
 Flashbots Alpha is a proof-of-concept implementation of a direct communication channel between miners and Ethereum users that would like to communicate their preferred transaction order within a block.
 
-Instead of broadcasting to the peer-to-peer network and competing with all Ethereum users, Flashbots users bid against each other in providing a reward directly to miners through a seal-bid auction. DeFi traders such as liquidators and arbitrageurs, can use Flashbots to bid for transaction inclusion without paying any gas fee for failed transactions, nor do they need to worry about leaking strategies before their trade was mined on-chain. 
+Instead of broadcasting to the peer-to-peer network and competing with all Ethereum users, Flashbots users bid against each other in providing a reward directly to miners through a seal-bid auction. DeFi traders such as liquidators and arbitrageurs, can use Flashbots to bid for transaction inclusion without paying any gas fee for failed transactions, nor do they need to worry about leaking strategies before their trade is mined on-chain. 
 
 Miners and/or mining pools can receive MEV revenue, which is expected to be higher than revenue from mining regular blocks, for including the most profitable transaction bundles submitted by Flashbots users.
 
