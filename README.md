@@ -47,7 +47,7 @@ If you are a miner and/or mining pool, we invite you to try Flashbots during thi
 - MEV-geth demo repo: https://github.com/flashbots/mev-geth-demo
 </br> A quick start on running an MEV GETH node, and shows how a miner may profit from it by accepting MEV bundles either via direct block.coinbase smart contract "bribes", or with extra transactions that pay the block's coinbase if it's known ahead of time.
 - Flashbots Miner FAQ: https://github.com/flashbots/pm/blob/main/guides/miner-onboarding.md
-- Dedicated Flashbots Discord channel [#🤖mev-geth](https://discord.gg/neqxEYrA) .
+- Dedicated Flashbots Discord channel [#🤖mev-geth](https://discord.gg/68GvvYFu6P) .
 
 ### Onboard Flashbots Alpha as a Trader
 
