@@ -17,23 +17,32 @@ Instead of broadcasting to the peer-to-peer network and competing with all Ether
 
 Miners and/or mining pools can receive MEV revenue, which is expected to be higher than revenue from mining regular blocks, for including the most profitable transaction bundles submitted by Flashbots users.
 
-Flashbots aim to provide a "direct fast lane" for transaction inclusion with an efficient, fair and sustainable MEV auction mechanism, potentially reducing network congestion and lowering transaction fees for regular Ethereum users.
+Flashbots aim to provide a "direct fast lane" for transaction inclusion with an efficient, fair and sustainable MEV auction mechanism, potentially reducing network congestion and lowering transaction fees for regular Ethereum users while increasing revenues for miners.
 
 We are currently in the Alpha phase of infrastructure development and are quickly iterating in public towards a permissionless infrastructure, as set forth in the [mission](https://medium.com/flashbots/frontrunning-the-mev-crisis-40629a613752) of Flashbots' organization. We welcome all ecosystem participants to provide early technical feedback via Github issues and pull requests in the relevant [repos](https://github.com/flashbots), create open-source toolings to improve transparency within Flashbots ecosystem, and participate in ongoing discussions on Flashbots' [Discord](https://discord.gg/3TjWjBerRb)!
 
 ### Flashbots Alpha is composed of MEV-geth & MEV-relay
 
-Any miner and mining pool can run [MEV-geth](https://github.com/flashbots/mev-geth), a simple 500-line upgrade patch to the [geth](https://geth.ethereum.org/) codebase (see [summary](https://github.com/flashbots/mev-geth#what-is-the-difference-between-mev-geth-and-geth) of the [diff](https://github.com/ethereum/go-ethereum/compare/master...flashbots:master#diff-c426ecd2f7d247753b9ea8c1cc003f21fa412661c1f967d203d4edf8163da344R1970)) that Flashbots open-sourced in November 2020. MEV-geth opens the aforementioned communication channel on the miners' side. This Alpha release constitutes the opening of the other side of the communication channel: any Ethereum user can now send their transaction bundles to miners via MEV-relay. 
+Any miner and mining pool can run [MEV-geth](https://github.com/flashbots/mev-geth), a simple patch on the [geth](https://geth.ethereum.org/) codebase (see [summary](https://github.com/flashbots/mev-geth#what-is-the-difference-between-mev-geth-and-geth).
 
-While anyone is able to send transaction bundles directly to miners who have chosen to publish their MEV-geth node RPC endpoint, Flashbots has implemented a hosted gateway called [MEV-relay](https://github.com/flashbots/mev-relay-js), which forwards bundles to the miner(s) and/or mining pool(s) who register their MEV-geth nodes. MEV-relay provides spam prevention for registered miner(s)/mining pool(s), and enables users to reach all miners registered on MEV-relay in one place.
+The patch is broken down into three modules:
+1. bundle worker and `eth_sendBundle` rpc ([8104d5d7b0a54bd98b3a08479a1fde685eb53c29](https://github.com/flashbots/mev-geth/commit/8104d5d7b0a54bd98b3a08479a1fde685eb53c29) and [c2b5b4029b2b748a6f1a9d5668f12096f096563d](https://github.com/flashbots/mev-geth/commit/c2b5b4029b2b748a6f1a9d5668f12096f096563d))
+2. profit switcher ([aa5840d22f4882f91ecba0eb20ef35a702b134d5](https://github.com/flashbots/mev-geth/commit/aa5840d22f4882f91ecba0eb20ef35a702b134d5))
+3. `eth_callBundle` simulation rpc ([9199d2e13d484df7a634fad12343ed2b46d5d4c3](https://github.com/flashbots/mev-geth/commit/9199d2e13d484df7a634fad12343ed2b46d5d4c3) and [a99dfc198817dd171128cc22439c81896e876619](https://github.com/flashbots/mev-geth/commit/a99dfc198817dd171128cc22439c81896e876619))
+
+While only the bundle worker and `eth_sendBundle` module is necessary to mine flashbots blocks, we recommend also running the profit switcher module to guarantee mining rewards are maximized. The `eth_callBundle` simulation rpc module is not needed for the alpha.
+
+You can see a summary of all diffs [here](https://github.com/ethereum/go-ethereum/compare/master...flashbots:master).
+
+To start receiving flashbots bundles from users, the miner needs to set a [reverse proxy](https://github.com/flashbots/mev-relay-js/blob/master/miner/proxy.js) to open their `eth_sendBundle` rpc and request to be whitelisted on the Flashbots hosted gateway called [MEV-relay](https://github.com/flashbots/mev-relay-js). MEV-relay is needed during the alpha to aggregate bundle requests from all users, prevent spam and DOS attacks on participating miner(s)/mining pool(s), and collect necessary system health metrics.
 
 ### Onboard Flashbots Alpha as a Miner
 
 We invite you to try Flashbots during this Alpha phase and start receiving MEV revenue by following these 4 steps:
 
-1. Fill out this [form](https://forms.gle/78JS52d22dwrgabi6) to indicate your interest in participating in the Alpha and be added to the MEV-relay miner registry. 
-2. You will receive an onboarding email from Flashbots to help [set up](https://github.com/flashbots/mev-geth/blob/master/README.md#quick-start) your MEV-geth node and protect it with a [reverse proxy](https://github.com/flashbots/mev-relay-js/blob/master/miner/proxy.js). 
-3. Respond to Flashbots' email with your MEV-geth node RPC endpoint to be added to the MEV-relay gateway. 
+1. Fill out this [form](https://forms.gle/78JS52d22dwrgabi6) to indicate your interest in participating in the Alpha and be added to the MEV-relay miner whitelist. 
+2. You will receive an onboarding email from Flashbots to help [set up](https://github.com/flashbots/mev-geth/blob/master/README.md#quick-start) your MEV-geth node and protect it with a reverse proxy. 
+3. Respond to Flashbots' email with your MEV-geth node endpoint to be added to the MEV-relay gateway. 
 4. After receiving a confirmation email that your MEV-geth node's endpoint has been added to the relay, you will immediately start receiving Flashbots transaction bundles with associated MEV revenue paid to you.
 
 Here are the resources currently available to help you setup MEV-geth:
@@ -41,7 +50,7 @@ Here are the resources currently available to help you setup MEV-geth:
 - MEV-geth demo repo: https://github.com/flashbots/mev-geth-demo
 - Dedicated Discord channel [#🤖mev-geth](https://discord.gg/neqxEYrA) where you can ask any questions
 
-See you on chain ! :zap::robot_face: 
+See you on chain ! :zap::robot: 
 
 ## Frequently Asked Questions (FAQs)
 
