@@ -27,9 +27,9 @@ We are currently in the Alpha phase of infrastructure development and are quickl
 
 ### Flashbots Alpha is composed of MEV-geth & MEV-relay
 
-Any miner and mining pool can run [MEV-geth](https://github.com/flashbots/mev-geth), a simple 500-line upgrade patch to the [geth](https://geth.ethereum.org/) codebase (see [summary](https://github.com/flashbots/mev-geth#what-is-the-difference-between-mev-geth-and-geth) of the [diff](https://github.com/ethereum/go-ethereum/compare/master...flashbots:master#diff-c426ecd2f7d247753b9ea8c1cc003f21fa412661c1f967d203d4edf8163da344R1970)) that Flashbots open-sourced in November 2020. MEV-geth opens the aforementioned communication channel on the miners' side. This Alpha release constitutes the opening of the other side of the communication channel: any Ethereum user can now send their transaction bundles to miners via MEV-relay. 
+Any miner and mining pool can run [MEV-geth](https://github.com/flashbots/mev-geth), a simple patch on the [geth](https://geth.ethereum.org/) codebase (see [summary](https://github.com/flashbots/mev-geth#what-is-the-difference-between-mev-geth-and-geth).
 
-While anyone is able to send transaction bundles directly to miners who have chosen to publish their MEV-geth node RPC endpoint, Flashbots has implemented a hosted gateway called [MEV-relay](https://github.com/flashbots/mev-relay-js), which forwards bundles to the miner(s) and/or mining pool(s) who register their MEV-geth nodes. MEV-relay provides spam prevention for registered miner(s)/mining pool(s), and enables users to reach all miners registered on MEV-relay in one place.
+MEV-geth opens the aforementioned communication channel on the miners' side. This Alpha release constitutes the opening of the other side of the communication channel: any Ethereum user can now send their transaction bundles to miners via [MEV-relay](https://github.com/flashbots/mev-relay-js). MEV-relay is needed during the alpha to aggregate bundle requests from all users, prevent spam and DOS attacks on participating miner(s)/mining pool(s), and collect necessary system health metrics.
 
 ### Onboard Flashbots Alpha as a Miner
 
@@ -39,6 +39,8 @@ If you are a miner and/or mining pool, we invite you to try Flashbots during thi
 2. You will receive an onboarding email from Flashbots to help [set up](https://github.com/flashbots/mev-geth/blob/master/README.md#quick-start) your MEV-geth node and protect it with a [reverse proxy](https://github.com/flashbots/mev-relay-js/blob/master/miner/proxy.js). 
 3. Respond to Flashbots' email with your MEV-geth node RPC endpoint to be added to the MEV-relay gateway. 
 4. After receiving a confirmation email that your MEV-geth node's endpoint has been added to the relay, you will immediately start receiving Flashbots transaction bundles with associated MEV revenue paid to you.
+
+For technical reasons, Flashbots Alpha is only available to large miners and pool operators. This is a limitation we are working to remove in future releases.
 
 #### Resources to set up MEV-geth:
 
