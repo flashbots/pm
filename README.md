@@ -27,7 +27,7 @@ We are currently in the Alpha phase of infrastructure development and are quickl
 
 ### Flashbots Alpha is composed of MEV-geth & MEV-relay
 
-Any miner and mining pool can run [MEV-geth](https://github.com/flashbots/mev-geth), a simple patch on the [geth](https://geth.ethereum.org/) codebase (see [summary](https://github.com/flashbots/mev-geth#what-is-the-difference-between-mev-geth-and-geth).
+Any miner and mining pool can run [MEV-geth](https://github.com/flashbots/mev-geth), a simple patch on the [geth](https://geth.ethereum.org/) codebase (see [summary](https://github.com/flashbots/mev-geth#what-is-the-difference-between-mev-geth-and-geth)).
 
 MEV-geth opens the aforementioned communication channel on the miners' side. This Alpha release constitutes the opening of the other side of the communication channel: any Ethereum user can now send their transaction bundles to miners via [MEV-relay](https://github.com/flashbots/mev-relay-js). MEV-relay is needed during the alpha to aggregate bundle requests from all users, prevent spam and DOS attacks on participating miner(s)/mining pool(s), and collect necessary system health metrics.
 
