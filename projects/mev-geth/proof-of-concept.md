@@ -85,7 +85,7 @@ To submit a bundle, the searcher sends the bundle directly to the miner using th
 
 Miners can start mining MEV blocks by running MEV-Geth or by implementing their own fork that matches the specification.
 
-In order to start receiving bundles from searchers, miners will need to publish a [public https endpoint that exposes the `eth_sendBundle` RPC](https://github.com/flashbots/mev-relay-js).
+In order to start receiving bundles from searchers in the Flashbots Alpha, miners will need to apply to register their [http endpoint that exposes the `eth_sendBundle` RPC](https://github.com/flashbots/mev-relay-js) for inclusion in the mev-relay. The detailed steps are described in our [guide](https://github.com/flashbots/pm/blob/main/guides/miner-onboarding.md#onboard-flashbots-alpha-as-a-miner).
 
 MEV-Geth is maintained by the Flashbots core dev team and [the source code can be found on github](https://github.com/flashbots/mev-geth).
 
