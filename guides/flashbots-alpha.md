@@ -1,6 +1,6 @@
 # Flashbots Alpha
 
-A collection of relevant information related to the Flashbots Alpha release and running bots using Flashbots. This document will be continuously updated as we receive more questions you.
+A collection of relevant information related to the Flashbots Alpha release and running bots using Flashbots. This document will be continuously updated as we receive more questions from you.
 
 ## Contents
 1. [Announcement](#announcement)
