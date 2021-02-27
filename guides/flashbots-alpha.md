@@ -18,7 +18,7 @@ You can start submitting transaction bundles on mainnet by following these steps
 
 After successfully mining our first bundle in block [11550019](https://bit.ly/38ahRyC) and doing reliability testing over the following days, we are ready to open this proof of concept to the public for anyone to get their Ethereum transactions prioritized using Flashbots bundles. We've open sourced the simple arbitrage searcher @epheph#8354 built for testing [here](https://bit.ly/3hGbDtk). You should be able to run this searcher out of the box.
 
-While anyone is able to send bundles directly to miners who have published their `eth_sendBundle` RPC endpoint, we've built a hosted gateway called `mev-relay` which forwards bundles to mining pools who registered their `mev-geth` nodes. This should make it easier for you to reach all miners in one place. You can find the `mev-relay` source code [here](https://bit.ly/390zf8b).
+We've built a hosted gateway called `mev-relay` that receives bundles from searchers and forwards them to mining pools who registered their `mev-geth` nodes with Flashbots. Using MEV-relay is required during the alpha to aggregate bundle requests from all users, prevent spam and DOS attacks on participating miner(s)/mining pool(s), and collect necessary system health metrics. You can find the `mev-relay` source code [here](https://bit.ly/390zf8b). We are working to remove this requirement in future releases of mev-geth.
 
 Please be aware that if you decide to use any relay to submit bundles, the operator of the relay is a trusted intermediary. They can see the content of the bundles and potentially censor or steal them. :warning: Only send bundles to a relay you trust! :warning:We encourage other trusted parties to build their own relays for Flashbots bundles in order to increase system redundancy.
 
@@ -58,7 +58,7 @@ There is currently 1-10% of hashrate at any time running this alpha. This figure
 
 ### What's MEV-Relay?
 
-MEV-Relay is a hosted gateway which forwards bundles to mining pools who registered their mev-geth nodes so that it's easier for you to reach all miners in one place. You can find the mev-relay source code [here](https://bit.ly/390zf8b). To be clear, anyone is free to send bundles directly to miners who have published their eth_sendBundle RPC endpoint.
+MEV-Relay is a hosted gateway which forwards bundles to mining pools who registered their mev-geth nodes so that it's easier for you to reach all miners in one place. You can find the mev-relay source code [here](https://bit.ly/390zf8b). Using MEV-relay is required during the alpha to aggregate bundle requests from all users, prevent spam and DOS attacks on participating miner(s)/mining pool(s), and collect necessary system health metrics. We are working to remove this requirement in future releases of mev-geth.
 
 :warning: Please be aware that if you decide to use any relay to submit bundles, the operator of the relay is a trusted intermediary. They can see the content of the bundles and potentially censor or steal them. Only send bundles to a relay you trust. :warning: We encourage other trusted parties to build other relays for Flashbots bundles in order to increase system redundancy. 
 
