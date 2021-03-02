@@ -23,7 +23,7 @@ We are currently in the Alpha phase of infrastructure development and are quickl
 
 ### Flashbots Alpha is composed of MEV-geth & MEV-relay
 
-Any miner and mining pool can run [MEV-geth](https://github.com/flashbots/mev-geth), a simple patch on the [geth](https://geth.ethereum.org/) codebase 
+Any miner and mining pool can run [MEV-geth](https://github.com/flashbots/mev-geth), a simple patch on the [geth](https://geth.ethereum.org/) codebase. 
 
 The entire patch can be broken down into four modules:
 
