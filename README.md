@@ -15,11 +15,11 @@ Learn more about our values and our mission: [Flashbots - Frontrunning the MEV C
 <br> Subscribe to our public calendar [here](https://bit.ly/3uJAHpo)
 
 ### Index:
-* [Introduction]()
-* [Flashbots Alpha]()
-* [MEV-Explore]()
-* [Our organization & ways you can contribute]()
-* [List of resources, MEV Roasts recordings and how to navigate Flashbots' github]()
+* [Introduction](https://github.com/flashbots/pm#flashbots)
+* [Flashbots Alpha](https://github.com/flashbots/pm#flashbots-alpha)
+* [MEV-Explore](https://github.com/flashbots/pm#mev-explore)
+* [Our organization & ways you can contribute](https://github.com/flashbots/pm#our-organization)
+* [List of resources, MEV Roasts recordings and how to navigate Flashbots' github](https://github.com/flashbots/pm#resources)
 
 ----
 ## Flashbots Alpha
@@ -46,9 +46,9 @@ This infrastructure allows:
 * miners to receive additional revenue in the form of the bundle tip, in exchange for including the most profitable bundle in the block they mined.
 
 Interested in learning more?
-[Onboard Flashbots alpha as a trader](https://github.com/flashbots/pm/blob/main/guides/flashbots-alpha.md)
-[Onboard Flashbots alpha as a miner](https://github.com/flashbots/pm/blob/main/guides/miner-onboarding.md)
-Read our [Jan 2021 Transparency Report](https://medium.com/flashbots/flashbots-transparency-report-january-2021-922514de8b8a)
+<br> [Onboard Flashbots alpha as a trader](https://github.com/flashbots/pm/blob/main/guides/flashbots-alpha.md)
+<br> [Onboard Flashbots alpha as a miner](https://github.com/flashbots/pm/blob/main/guides/miner-onboarding.md)
+<br> Read our [Jan 2021 Transparency Report](https://medium.com/flashbots/flashbots-transparency-report-january-2021-922514de8b8a)
 
 We are quickly iterating in public towards a permissionless infrastructure with full transaction privacy. We welcome all ecosystem participants to provide early technical feedback via Github issues and pull requests in the relevant [repos](https://github.com/flashbots), create open-source toolings to improve transparency within Flashbots ecosystem, and participate in ongoing discussions on Flashbots' [Discord](https://discord.gg/3TjWjBerRb)!
 
