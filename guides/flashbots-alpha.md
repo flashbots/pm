@@ -112,7 +112,7 @@ If using the library linked above, sending a bundle returns a promise that resol
 ### What do I need to change in my bot aside from using the sendBundle to submit transactions?
 To get the full benefit of using flashbots, it is beneficial to transition from transaction fee payment (e.g. `gasPrice * gasUsed`) to coinbase payments. Since you can now submit 0-gas-price transactions, you will need to add functionality to your on-chain code to pay `block.coinbase.transfer()` based on the reward intended for the miner. This can come from a calldata argument or some fixed percentage of the overall opportunity calculated on-chain. We recommend using calldata for specifying the reward in order to quickly react to fluctuations in flashbot bundle prices.
 
----
+## Resources
 
 We recommend checking out this [great guide](https://fifikobayashi.medium.com/beginners-guide-to-troubleshooting-mev-on-flashbots-aee175048858) by Flashbots community member [Fiona Kobayashi](https://twitter.com/fifikobayashi) going over some of the issues searchers would have as they start sending Flashbots bundles. Fiona goes over a few reasons why your bundle might not be picked by miners:
 * Noncompetitive gwei price
@@ -123,10 +123,8 @@ We recommend checking out this [great guide](https://fifikobayashi.medium.com/be
 * Rate limiting
 * Transaction nonce is too low
 
-![image](https://user-images.githubusercontent.com/19510814/110649313-19495c80-817f-11eb-87b3-a892626258ee.png)
 
-
-## Other Resources
+### Other Resources
 * Example arbitrage searcher: https://github.com/flashbots/simple-arbitrage
 * MEV-Relay repo: https://github.com/flashbots/mev-relay-js
 * Flashbots ethers.js provider: https://github.com/flashbots/ethers-provider-flashbots-bundle
