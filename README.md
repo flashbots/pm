@@ -78,13 +78,20 @@ We are not your typical project, we are fully remote and our principles are base
 * nothing fits in the above? reach out at info@flashbots.net 
 
 ## Resources
-
-* [Flashbots: Frontrunning the MEV Crisis (medium)](https://medium.com/flashbots/frontrunning-the-mev-crisis-40629a613752)
-* [Flashbots: Frontrunning the MEV crisis (EthR post)](https://ethresear.ch/t/flashbots-frontrunning-the-mev-crisis/8251)
-* [Quantifying MEV: Introducing MEV-Explore v0](https://medium.com/flashbots/quantifying-mev-introducing-mev-explore-v0-5ccbee0f6d02)
+* [Flashbots: Frontrunning the MEV crisis (Eth Research post)](https://ethresear.ch/t/flashbots-frontrunning-the-mev-crisis/8251)
 * [explore.flashbots.net](https://explore.flashbots.net)
 * [Flashbots Discord](https://discord.gg/7hvTycdNcK)
-* [Flashbots Research vault](https://github.com/flashbots/mev-research#ship-vault)
+
+### New to MEV? Here's where to get started
+* [Ethereum is a Dark Forest](https://medium.com/@danrobinson/ethereum-is-a-dark-forest-ecc5f0505dff) by Dan Robinson & Georgios Konstantopoulos
+* [How to get Front-Run on Ethereum mainnet](https://youtu.be/UZ-NNd6yjFM) by Scott Bigelow
+* [Escaping the Dark Forest](https://samczsun.com/escaping-the-dark-forest/) by samczsun
+* [Frontrunning in DEXs, Miner Extractable Value, and Consensus Instability](https://youtu.be/vR1v7AQ8i3k) by Phil Daian at IEEE Symposium on Security and Privacy
+* [Flashbots: Frontrunning the MEV Crisis](https://medium.com/flashbots/frontrunning-the-mev-crisis-40629a613752) by Flashbots
+* [ETHOnline - Phil & Georgios Talk Miner Extractable Value](https://youtu.be/tv0CkmcoGkM)
+* [Quantifying MEV: Introducing MEV-Explore v0](https://medium.com/flashbots/quantifying-mev-introducing-mev-explore-v0-5ccbee0f6d02) by Flashbots
+
+You can check out a full list of MEV resources in our [Research Vault](https://github.com/flashbots/mev-research#ship-vault)
 
 ### MEV Roast Recordings!
 
