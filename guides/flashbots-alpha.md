@@ -7,14 +7,13 @@ A collection of relevant information related to the Flashbots Alpha release and 
 2. [FAQ](#frequently-asked-questions)
 3. [Resources](#resources)
 
-## Announcement
+## Announcement on Jan 6 (updated given changes to alpha)
 
 To start off 2021 with a bang, Flashbots is entering Alpha today. 
 
 You can start submitting transaction bundles on mainnet by following these steps:
 1. Join [#🤖searchers](https://discord.gg/KNFBvZzJyT) channel on Discord
-2. Apply for an [API key](https://forms.gle/1uunzbhhZQP1BKtdA)
-3. Update your searcher scripts to send bundles to `relay.flashbots.net` or directly to miners' RPC endpoints
+2. Update your searcher scripts to send bundles to `relay.flashbots.net` 
 
 After successfully mining our first bundle in block [11550019](https://bit.ly/38ahRyC) and doing reliability testing over the following days, we are ready to open this proof of concept to the public for anyone to get their Ethereum transactions prioritized using Flashbots bundles. We've open sourced the simple arbitrage searcher @epheph#8354 built for testing [here](https://bit.ly/3hGbDtk). You should be able to run this searcher out of the box.
 
@@ -47,10 +46,10 @@ This is interesting for any DeFi trader who is subject to gas competitions with 
 
 ### What's a searcher?
 
-A searcher is the a Flashbots user that submits transaction(s) to be prioritized through the Flashbots infrastructure.
+A searcher is a Flashbots user that submits transaction(s) to be prioritized through the Flashbots infrastructure.
 
 ### How do I become a searcher and start submitting Flashbots bundles?
-During the alpha phase of the Flashbots rollout, API keys are required to submit bundles. To apply for this alpha api key, [fill out the searcher indication of interest](https://forms.gle/1uunzbhhZQP1BKtdA).
+You can start using Flashbots by updating your trading bots to fit the Flashbots message format and send Flashbots bundles to `relay.flashbots.net`.
 
 ### How much hashrate is currently running MEV-Geth?
 
@@ -101,57 +100,6 @@ eth_sendBundle(
 )
 ```
 
-### Example code for web3.js:
-```js
-// GET TX PARAMS
-txParams = {
-    nonce: _nonce,
-    gasPrice: _gasPrice,
-    gasLimit: _gasLimit,
-    to: _contractAddress,
-    value: '0x00',
-    data: data,
-}
-
-// CREATE THE TX TO SIGN
-const tx = new EthereumTx(txParams)
-
-// READ PRIVATE KEY TO HEX
-privateKey = Buffer.from(
-    senderPrivKey,
-    'hex',
-)
-
-// SIGN THE TX WITH PRIVATE KEY
-try {
-    tx.sign(privateKey)
-} catch (err) {
-    logger.error("Could not sign tx. Err:\n %o", err)
-    throw "Could not sign tx"
-}
-
-// SERIALIZE
-const serializedTxObject = tx.serialize()
-const serializedTxString = "0x" + serializedTxObject.toString("hex")
-
-// VERIFY THAT TX VALIDATES
-if (!tx.validate()) {
-    logger.error("Could not validate tx with params: \n %o", txParams)
-    throw "Could not validate tx"
-}
-
-// And then broadcast the tx using web3.js here ...
-web3.currentProvider.sendAsync({
-  jsonrpc: “2.0”, 
-  method: “eth_sendBundle”,
-  params: [
-      [serializedTxString],
-      await web3.eth.getBlockNumber() + 1
-  ],
-  id: 1
-})
-```
-
 ### Why didn't my transaction get included?
 Unlike broadcasting a transaction and landing on-chain, even if the transaction fails, troubleshooting Flashbot bundles can be challenging, since transaction failure, incentives not being high enough, and a non-flashbot-miner all look the same: your transactions do not show up.
 
@@ -164,12 +112,26 @@ If using the library linked above, sending a bundle returns a promise that resol
 ### What do I need to change in my bot aside from using the sendBundle to submit transactions?
 To get the full benefit of using flashbots, it is beneficial to transition from transaction fee payment (e.g. `gasPrice * gasUsed`) to coinbase payments. Since you can now submit 0-gas-price transactions, you will need to add functionality to your on-chain code to pay `block.coinbase.transfer()` based on the reward intended for the miner. This can come from a calldata argument or some fixed percentage of the overall opportunity calculated on-chain. We recommend using calldata for specifying the reward in order to quickly react to fluctuations in flashbot bundle prices.
 
-## Resources
+---
 
-* A technical overview of Flashbots the organization: https://ethresear.ch/t/flashbots-frontrunning-the-mev-crisis/8251
-* Our values and what we stand for: https://medium.com/flashbots/frontrunning-the-mev-crisis-40629a613752
+We recommend checking out this [great guide](https://fifikobayashi.medium.com/beginners-guide-to-troubleshooting-mev-on-flashbots-aee175048858) by Flashbots community member [Fiona Kobayashi](https://twitter.com/fifikobayashi) going over some of the issues searchers would have as they start sending Flashbots bundles. Fiona goes over a few reasons why your bundle might not be picked by miners:
+* Noncompetitive gwei price
+* Incorrect gas estimates
+* Miner luck
+* Outcompeted by another searcher
+* Failing transaction
+* Rate limiting
+* Transaction nonce is too low
+
+![image](https://user-images.githubusercontent.com/19510814/110649313-19495c80-817f-11eb-87b3-a892626258ee.png)
+
+
+## Other Resources
 * Example arbitrage searcher: https://github.com/flashbots/simple-arbitrage
 * MEV-Relay repo: https://github.com/flashbots/mev-relay-js
 * Flashbots ethers.js provider: https://github.com/flashbots/ethers-provider-flashbots-bundle
+* Flashbots web3.py provider: https://github.com/flashbots/web3-flashbots
 * Ask any questions in the [#🤖searchers](https://discord.gg/d9XYzHA4hM) channel on our Discord 
+* A technical overview of Flashbots the organization: https://ethresear.ch/t/flashbots-frontrunning-the-mev-crisis/8251
+* Our values and what we stand for: https://medium.com/flashbots/frontrunning-the-mev-crisis-40629a613752
 
