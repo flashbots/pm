@@ -123,7 +123,28 @@ The are a couple ways to see revenue that results from MEV:
 * Searching MEV-geth logs: `grep Flashbots bundle`. 
     Results will look like `Flashbots bundle bundlePrice=48471302632  bundleLength=1`. 
     Note: the `bundlePrice` here is an adjusted gas price, not actually ETH.
+* Query the [Flashbots blocks API](https://blocks.flashbots.net) to find the profit per block:
+```
+> curl 'https://blocks.flashbots.net/v1/blocks?block_number=12006597'
+{
+  "blocks": [
+    {
+      "block_number": 12006597,
+      "miner_reward": 89103402731082940,
+      "miner": "0xd224ca0c819e8e97ba0136b3b95ceff503b79f53",
+      "coinbase_transfers": 51418761731082940,
+      "gas_used": 374858,
+      "gas_price": 237699082668,
+      "transactions": [...]
 
+    }
+  ]
+}
+```
+or find the most recent 100 blocks mined by an address
+```
+> curl 'https://blocks.flashbots.net/v1/blocks?miner=0xd224ca0c819e8e97ba0136b3b95ceff503b79f53
+```
 
 ### 10. How does MEV revenue work with existing mining pool reward systems, in particular Pay Per Share (PPS) vs. Pay Per Last (luck) N Shares (PPLNS)?
 
