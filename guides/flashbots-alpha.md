@@ -7,14 +7,13 @@ A collection of relevant information related to the Flashbots Alpha release and 
 2. [FAQ](#frequently-asked-questions)
 3. [Resources](#resources)
 
-## Announcement
+## Announcement on Jan 6 (updated given changes to alpha)
 
 To start off 2021 with a bang, Flashbots is entering Alpha today. 
 
 You can start submitting transaction bundles on mainnet by following these steps:
 1. Join [#🤖searchers](https://discord.gg/KNFBvZzJyT) channel on Discord
-2. Apply for an [API key](https://forms.gle/1uunzbhhZQP1BKtdA)
-3. Update your searcher scripts to send bundles to `relay.flashbots.net` or directly to miners' RPC endpoints
+2. Update your searcher scripts to send bundles to `relay.flashbots.net` 
 
 After successfully mining our first bundle in block [11550019](https://bit.ly/38ahRyC) and doing reliability testing over the following days, we are ready to open this proof of concept to the public for anyone to get their Ethereum transactions prioritized using Flashbots bundles. We've open sourced the simple arbitrage searcher @epheph#8354 built for testing [here](https://bit.ly/3hGbDtk). You should be able to run this searcher out of the box.
 
@@ -47,10 +46,10 @@ This is interesting for any DeFi trader who is subject to gas competitions with 
 
 ### What's a searcher?
 
-A searcher is the a Flashbots user that submits transaction(s) to be prioritized through the Flashbots infrastructure.
+A searcher is a Flashbots user that submits transaction(s) to be prioritized through the Flashbots infrastructure.
 
 ### How do I become a searcher and start submitting Flashbots bundles?
-During the alpha phase of the Flashbots rollout, API keys are required to submit bundles. To apply for this alpha api key, [fill out the searcher indication of interest](https://forms.gle/1uunzbhhZQP1BKtdA).
+You can start using Flashbots by updating your trading bots to fit the Flashbots message format and send Flashbots bundles to `relay.flashbots.net`.
 
 ### How much hashrate is currently running MEV-Geth?
 
@@ -62,20 +61,17 @@ MEV-Relay is a hosted gateway which forwards bundles to mining pools who registe
 
 :warning: Please be aware that if you decide to use any relay to submit bundles, the operator of the relay is a trusted intermediary. They can see the content of the bundles and potentially censor or steal them. Only send bundles to a relay you trust. :warning: We encourage other trusted parties to build other relays for Flashbots bundles in order to increase system redundancy. 
 
-### Why do I need an API key to access this alpha?
+### What sort of key do I need to access the relay?
 
-While Flashbots infrastructure will be permisionless over the longer term, it is permisioned for this proof of concept in order to ensure stability and security of the system. 
+Note: Initially, the Flashbots MEV-Relay was released with a required set of API Keys that needed to be provided with every relay interaction, if you have one of these keys, you no longer need to use it.
 
-### Why was my API key rate-limited or suspended?
+MEV-relay expects payloads to be signed using a standard Ethereum private key. This relay signing address does not need to be given to Flashbots in advance, and it does not need to store any ETH or other assets (and we recommend it does not and it should be a different key from your bot's EOA key).
 
-There are several reasons this could be the case:
-* **Bundle submission of over 60 a minute**
-Each API key has a rate-limit of 60 bundle submissions a minute to ensure the stability and security of the alpha. 
-* **Excessively large gas limits**
-Large gas limits prohibit us from estimating the upper-bound of evm processing requirements.
-* **Excessive submission of bundle with irrelevant transactions**
-Submitting bundles that includes transactions irrelevant to you will cause instability of the alpha.
+The signature needs to be provided via the 'X-Flashbots-Signature' Header. Reference implementation can be found in the [Flashbots Ethers Provider](https://github.com/flashbots/ethers-provider-flashbots-bundle/blob/9e039cc92fcaa3d15e71f11faa7acf4f4f0674fa/src/index.ts#L307-L310)
 
+### Why do I need to provide this unrelated auth-signing key?
+
+By signing payloads with your own relay signing key, this will enable building a reputation for high-priority delivery of your bundles to miners. The relay simulates bundles before sending to miners which can take a small amount of time. The relay cannot determine which bundles are profitable without performing a full simulation. This signing key allows the relay to infer which bundles are likely profitable, based on historical performance. Using a reputation system allows reliable searchers to be rewarded while still allowing new searchers to participate.
 
 ### How do I target a timestamp range instead of a block number when submitting a bundle?
 
@@ -104,57 +100,6 @@ eth_sendBundle(
 )
 ```
 
-### Example code for web3.js:
-```js
-// GET TX PARAMS
-txParams = {
-    nonce: _nonce,
-    gasPrice: _gasPrice,
-    gasLimit: _gasLimit,
-    to: _contractAddress,
-    value: '0x00',
-    data: data,
-}
-
-// CREATE THE TX TO SIGN
-const tx = new EthereumTx(txParams)
-
-// READ PRIVATE KEY TO HEX
-privateKey = Buffer.from(
-    senderPrivKey,
-    'hex',
-)
-
-// SIGN THE TX WITH PRIVATE KEY
-try {
-    tx.sign(privateKey)
-} catch (err) {
-    logger.error("Could not sign tx. Err:\n %o", err)
-    throw "Could not sign tx"
-}
-
-// SERIALIZE
-const serializedTxObject = tx.serialize()
-const serializedTxString = "0x" + serializedTxObject.toString("hex")
-
-// VERIFY THAT TX VALIDATES
-if (!tx.validate()) {
-    logger.error("Could not validate tx with params: \n %o", txParams)
-    throw "Could not validate tx"
-}
-
-// And then broadcast the tx using web3.js here ...
-web3.currentProvider.sendAsync({
-  jsonrpc: “2.0”, 
-  method: “eth_sendBundle”,
-  params: [
-      [serializedTxString],
-      await web3.eth.getBlockNumber() + 1
-  ],
-  id: 1
-})
-```
-
 ### Why didn't my transaction get included?
 Unlike broadcasting a transaction and landing on-chain, even if the transaction fails, troubleshooting Flashbot bundles can be challenging, since transaction failure, incentives not being high enough, and a non-flashbot-miner all look the same: your transactions do not show up.
 
@@ -169,10 +114,22 @@ To get the full benefit of using flashbots, it is beneficial to transition from 
 
 ## Resources
 
-* A technical overview of Flashbots the organization: https://ethresear.ch/t/flashbots-frontrunning-the-mev-crisis/8251
-* Our values and what we stand for: https://medium.com/flashbots/frontrunning-the-mev-crisis-40629a613752
+We recommend checking out this [great guide](https://fifikobayashi.medium.com/beginners-guide-to-troubleshooting-mev-on-flashbots-aee175048858) by Flashbots community member [Fiona Kobayashi](https://twitter.com/fifikobayashi) going over some of the issues searchers would have as they start sending Flashbots bundles. Fiona goes over a few reasons why your bundle might not be picked by miners:
+* Noncompetitive gwei price
+* Incorrect gas estimates
+* Miner luck
+* Outcompeted by another searcher
+* Failing transaction
+* Rate limiting
+* Transaction nonce is too low
+
+
+### Other Resources
 * Example arbitrage searcher: https://github.com/flashbots/simple-arbitrage
 * MEV-Relay repo: https://github.com/flashbots/mev-relay-js
 * Flashbots ethers.js provider: https://github.com/flashbots/ethers-provider-flashbots-bundle
+* Flashbots web3.py provider: https://github.com/flashbots/web3-flashbots
 * Ask any questions in the [#🤖searchers](https://discord.gg/d9XYzHA4hM) channel on our Discord 
+* A technical overview of Flashbots the organization: https://ethresear.ch/t/flashbots-frontrunning-the-mev-crisis/8251
+* Our values and what we stand for: https://medium.com/flashbots/frontrunning-the-mev-crisis-40629a613752
 
