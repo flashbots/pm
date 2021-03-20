@@ -1,4 +1,4 @@
-# Onboard Flashbots Alpha
+# Flashbots Alpha - Searcher Onboarding
 
 A collection of relevant information for searchers looking to use Flashbots Alpha. This document will be continuously updated as we receive more questions from you.
 
