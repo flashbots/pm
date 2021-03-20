@@ -27,18 +27,18 @@ Learn more about our values and our mission: [Flashbots - Frontrunning the MEV C
 On Jan 6th 2021, we entered the Flashbots Alpha phase by establishing a proof-of-concept communication channel between traders and miners. This proof-of-concept is made of two components: MEV-Geth, a slightly modified fork of the Ethereum Geth client, and MEV-Relay, a transaction bundle relayer.
 
 **How it works:**
-* A searcher sends a Flashbots bundle to MEV-Relay. The bundle contains:
-  * one or several transactions that can be the searcher's and/or pending transactions in the mempool
-  * a sealed tip that is paid to the miner
-* MEV-Relay receives this bundle and sends it to all whitelisted MEV-Geth miners
-* Miners receive Flashbots bundles through MEV-Geth. 
-  * there can only be a single bundle per block
-  * the Flashbots bundle will always be at the top slot of the block by design of the system.
-* MEV-Geth picks which bundle to choose for each block.
-  * MEV-Geth will pick the most profitable bundle for the miner.
-  * MEV-Geth will compare the block that includes the bundle vs a vanilla Geth block, and will default back to the vanilla Geth block in case it is more profitable.
-* Only when the searcher's bundle is included in a block is the tip associated to their bundle paid.
-  * a bundle that isn't included costs the sender nothing (ie. no gas fees are paid for failed transactions)
+* Searchers send Flashbots "bundles" to MEV-Relay. A bundle contains:
+  * one or several transactions that can be the trader's and/or other users' pending transactions from the mempool
+  * a sealed tip that is paid by the searcher to the miner via a smart contract call to `block.coinbase.transfer()`
+* Moreover, bundles have these properties:
+  * There can only be a single bundle per block (we are working on bundle merging to enable multiple)
+  * Flashbots bundles will always be at the top slot of the block
+* MEV-Relay receives bundles and sends them to all whitelisted MEV-Geth miners
+* Miners receive Flashbots bundles from MEV-Relay and process them in MEV-Geth
+* MEV-Geth picks the most profitable bundle out of all bundles it is sent.
+* MEV-Geth then compares the block that includes this bundle with a vanilla block that does not include any bundles. If it is more profitable to include a bundle MEV-Geth will do so, but otherwise it will default back to a vanilla Geth block.
+* Only when the a searcher's bundle is included in a block is the tip associated with their bundle paid.
+  * If a bundle is not included it does not cost the searcher anything (i.e. no gas fees are paid for failed transactions)
 
 This infrastructure allows:
 * searchers to bypass the Ethereum mempool and avoid their strategy leaking before it is mined on-chain (i.e. being frontrun by generalized frontrunners)
@@ -46,7 +46,7 @@ This infrastructure allows:
 * miners to receive additional revenue in the form of the bundle tip, in exchange for including the most profitable bundle in the block they mined.
 
 Interested in learning more?
-<br> [Onboard Flashbots alpha as a searcher](https://github.com/flashbots/pm/blob/main/guides/flashbots-alpha.md)
+<br> [Onboard Flashbots alpha as a searcher](https://github.com/flashbots/pm/blob/main/guides/searcher-onboarding.md)
 <br> [Onboard Flashbots alpha as a miner](https://github.com/flashbots/pm/blob/main/guides/miner-onboarding.md)
 <br> [Jan 2021 Transparency Report](https://medium.com/flashbots/flashbots-transparency-report-january-2021-922514de8b8a)
 <br> [Feb 2021 Transparency Report](https://medium.com/flashbots/flashbots-transparency-report-february-2021-8ac45b467d0a)
