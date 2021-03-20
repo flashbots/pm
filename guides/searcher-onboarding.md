@@ -195,23 +195,7 @@ You can ALSO provide a minimum/maximum timestamp in the bundle, but this only pr
 - 0,0 timesteamp means no restriction
 
 ### Can I submit directly to the sendBundle method without using the library?
-
-While the [ethers.js library](https://github.com/flashbots/ethers-provider-flashbots-bundle) we wrote makes interaction with this provider easy, it isn't required or complicated to call `eth_sendBundle` directly.
-
-Instead of the usual
-```
-eth_sendRawTransaction(signedTx)
-```
-
-you call:
-```
-eth_sendBundle(
-    [signedTx, (optional: signedTx2, signedTx3 )],
-    exactTargetBlockNumber,
-    minTimestamp [optional],
-    maxTimestamp [optional]
-)
-```
+Please see the [reference implementation](https://github.com/flashbots/simple-arbitrage), in particular how signing is done in order to be processed by the Relay.
 
 ### What is block.coinbase?
 Block.coinbase is a standard Solidity function that gives the current block miner’s address. Read more about it [here](https://docs.soliditylang.org/en/v0.4.24/units-and-global-variables.html#block-and-transaction-properties).
