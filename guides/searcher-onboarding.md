@@ -18,7 +18,7 @@ Flashbots Alpha is a proof-of-concept implementation of a direct communication c
 
 ### How does it work?
 
-* Searcher sends a Flashbots "bundles" to MEV-Relay. A bundle contains:
+* Searchers send Flashbots "bundles" to MEV-Relay. A bundle contains:
   * one or several transactions that can be the trader's and/or other users' pending transactions from the mempool
   * a sealed tip that is paid by the searcher to the miner via a smart contract call to `block.coinbase.transfer()`
 * Moreover, bundles have these properties:
