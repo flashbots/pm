@@ -18,37 +18,38 @@ Flashbots Alpha is a proof-of-concept implementation of a direct communication c
 
 ### How does it work?
 
-* A searcher sends a Flashbots bundle to MEV-Relay. The bundle contains:
-  * one or several transactions that can be the trader's and/or pending transactions in the mempool
-  * a sealed tip that is paid to the miner
-* MEV-Relay receives this bundle and sends it to all whitelisted MEV-Geth miners
-* Miners receive Flashbots bundles through MEV-Geth. 
-  * there can only be a single bundle per block
-  * the Flashbots bundle will always be at the top slot of the block by design of the system.
-* MEV-Geth picks which bundle to choose for each block.
-  * MEV-Geth will pick the most profitable bundle for the miner.
-  * MEV-Geth will compare the block that includes the bundle vs a vanilla Geth block, and will default back to the vanilla Geth block in case it is more profitable.
-* Only when the trader's bundle is included in a block is the tip associated to their bundle paid.
-  * a bundle that isn't included costs the sender nothing (ie. no gas fees are paid for failed transactions)
+* Searchers send Flashbots "bundles" to MEV-Relay. A bundle contains:
+  * one or several transactions that can be the trader's and/or other users' pending transactions from the mempool
+  * a sealed tip that is paid by the searcher to the miner via a smart contract call to `block.coinbase.transfer()`
+* Moreover, bundles have these properties:
+  * There can only be a single bundle per block (we are working on bundle merging to enable multiple)
+  * Flashbots bundles will always be at the top slot of the block
+* MEV-Relay receives bundles and sends them to all whitelisted MEV-Geth miners
+* Miners receive Flashbots bundles from MEV-Relay and process them in MEV-Geth
+* MEV-Geth picks the most profitable bundle out of all bundles it is sent.
+* MEV-Geth then compares the block that includes this bundle with a vanilla block that does not include any bundles. If it is more profitable to include a bundle MEV-Geth will do so, but otherwise it will default back to a vanilla Geth block.
+* Only when the a searcher's bundle is included in a block is the tip associated with their bundle paid.
+  * If a bundle is not included it does not cost the searcher anything (i.e. no gas fees are paid for failed transactions)
 
 ### Why use Flashbots Alpha?
-* It allows searchers to bypass the Ethereum mempool and avoid their strategy leaking before it is mined on-chain (i.e. being frontrun by generalized frontrunners)
+* It allows searchers to bypass the Ethereum mempool and avoid their strategy leaking before it is mined on-chain (e.g. being frontrun by generalized frontrunners)
 * It allows searchers to save money from avoiding to pay gas fees for failed transactions.
 * It allows miners to receive additional revenue in the form of the bundle tip, in exchange for including the most profitable bundle in the block they mined.
 * It reduces Ethereum network congestion and lowers Ethereum network transaction fees.
 
 ### Onboard Flashbots Alpha as a Searcher
 
-You can start using Flashbots alpha today by submitting transaction bundles to `relay.flashbots.net`.
+You can start using Flashbots Alpha today by submitting transaction bundles to `relay.flashbots.net`.
 
 You'll need to:
 - replace `eth_sendRawTransaction` by `eth_sendBundle`, either manually or using one of our providers (web3.py and [ethers.js](https://github.com/flashbots/ethers-provider-flashbots-bundle))
 - change the gas calculation logic of your bot
+- change your smart contract logic to pay a tip to the miner in the case of success by using `block.coinbase.transfer()`
 
 
 We go over this in further detail in the FAQ below.
 
-See you on chain ! :zap:🤖
+See you on-chain ! :zap:🤖
 
 Resources to get started:
 * Simple-arbitrage-searcher example bot we've open-sourced here: [simple-arbitrage-searcher]()
@@ -89,11 +90,11 @@ There are 5 mining pools running MEV-geth, collectively accounting for over 12% 
 
 ### What's MEV-Relay?
 
-MEV-Relay is a hosted gateway which forwards bundles to mining pools who registered their mev-geth nodes so that it's easier for you to reach all miners in one place. You can find the mev-relay source code [here](https://bit.ly/390zf8b). 
+MEV-Relay is a hosted gateway which forwards bundles to mining pools who registered their MEV-geth nodes so that it's easier for you to reach all miners in one place. You can find the MEV-relay source code [here](https://bit.ly/390zf8b). 
 
 ### Why do I have to use MEV-Relay?
 
-Using MEV-relay is required during the alpha to aggregate bundle requests from all users, prevent spam and DOS attacks on participating miner(s)/mining pool(s), and collect necessary system health metrics. We are working to remove this requirement in future releases of mev-geth.
+Using MEV-relay is required during the alpha to aggregate bundle requests from all users, prevent spam and DOS attacks on participating miner(s)/mining pool(s), and collect necessary system health metrics. We are working to remove this requirement in future releases of MEV-geth.
 
 
 :warning: Please be aware that if you decide to use the relay to submit bundles, the operator of the relay is a trusted intermediary. :warning:  
@@ -179,7 +180,7 @@ Rate limiting is currently in place to protect the infrastructure sitting behind
 
 ### Why do I need to provide this unrelated auth-signing key?
 
-By signing payloads with your own relay signing key, this will enable building a reputation for high-priority delivery of your bundles to miners. The relay simulates bundles before sending to miners which can take a small amount of time. The relay cannot determine which bundles are profitable without performing a full simulation. This signing key allows the relay to infer which bundles are likely profitable, based on historical performance. Using a reputation system allows reliable searchers to be rewarded while still allowing new searchers to participate.
+By signing payloads with your own relay signing key, this will enable building a reputation for high-priority delivery of your bundles to miners. MEV-relay simulates bundles before sending to miners which can take a small amount of time. MEV-relay cannot determine which bundles are profitable without performing a full simulation. This signing key allows the relay to infer which bundles are likely profitable, based on historical performance. Using a reputation system allows reliable searchers to be rewarded while still allowing new searchers to participate.
 
 ### How should I know the correct RPC that accepts eth bundle commands?
 You have to set it to a regular Ethereum node.
@@ -192,7 +193,7 @@ You **do** need to submit a bundle per target block. You can re-submit the exact
 
 You can ALSO provide a minimum/maximum timestamp in the bundle, but this only provides a hint to discard the block if it falls outside this time range. It does not expand the target outside the single indicated block number, and it does not change the timestamp selected by the miner.
 
-- 0,0 timesteamp means no restriction
+- 0,0 timestamp means no restriction
 
 ### Can I submit directly to the sendBundle method without using the library?
 Please see the [reference implementation](https://github.com/flashbots/ethers-provider-flashbots-bundle), in particular how signing is done in order to be processed by the Relay.
@@ -217,10 +218,8 @@ Yes, we are actively working on bundle merging.
 ### Where can I get data on past auctions and past blocks?
 blocks.flashbots.net
 
-
-
 ### When miners select bundles, are they differentiating between transfers to the coinbase and the gas fees to select which bundle is valid for inclusion?
-Nop!
+Nope!
 
 ### Can I simulate my bundle against historical blocks to backtest them?
 Yes, but only for dates after March 12th since the Relay is running with partial archive nodes. This means you can simulate blocks >= 12030000. This range will be extended shortly. 
@@ -244,7 +243,7 @@ It then picks the block that results in the miner's balance increasing the most.
 
 ### Can I use a contract to tip ETH to the miner? 
 You can pay miners either via gas or by sending ETH to their coinbase.
-It's best to pay via block.coinbase transfer to prevent the inclusion of your bundle when you miss (ie. you remove the miner incentive of inclusion on a miss) and to protect yourself from re-orgs.
+It's best to pay via block.coinbase transfer to prevent the inclusion of your bundle when you miss (i.e. you remove the miner incentive of inclusion on a miss) and to protect yourself from re-orgs.
 
 ### Can I deploy contracts using MEV?
 Yes, you can pay the block.coinbase fee in the constructor or you can pay the block.coinbase fee in a separate tx after your contract creation.
@@ -303,4 +302,3 @@ Your previous bundle is dropped if the new bundle is more valuable.
 * [The enemy of your enemy is NOT your friend](https://fiona.mirror.xyz/QXdCOAggA5g_j5R_JpO-V5LqK89EbimnYIV6c2rOsT0) by Fiona Kobayashi
 * [Flashbots gasless transactions thread](https://twitter.com/amanusk_/status/1370642493621080071?s=20) by Alex Manuskin
 * [Beginner's guide to troubleshooting MEV on Flashbots](https://fifikobayashi.medium.com/beginners-guide-to-troubleshooting-mev-on-flashbots-aee175048858) by Fiona Kobayashi
-
