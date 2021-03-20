@@ -27,8 +27,8 @@ Learn more about our values and our mission: [Flashbots - Frontrunning the MEV C
 On Jan 6th 2021, we entered the Flashbots Alpha phase by establishing a proof-of-concept communication channel between traders and miners. This proof-of-concept is made of two components: MEV-Geth, a slightly modified fork of the Ethereum Geth client, and MEV-Relay, a transaction bundle relayer.
 
 **How it works:**
-* A trader sends a Flashbots bundle to MEV-Relay. The bundle contains:
-  * one or several transactions that can be the trader's and/or pending transactions in the mempool
+* A searcher sends a Flashbots bundle to MEV-Relay. The bundle contains:
+  * one or several transactions that can be the searcher's and/or pending transactions in the mempool
   * a sealed tip that is paid to the miner
 * MEV-Relay receives this bundle and sends it to all whitelisted MEV-Geth miners
 * Miners receive Flashbots bundles through MEV-Geth. 
@@ -37,16 +37,16 @@ On Jan 6th 2021, we entered the Flashbots Alpha phase by establishing a proof-of
 * MEV-Geth picks which bundle to choose for each block.
   * MEV-Geth will pick the most profitable bundle for the miner.
   * MEV-Geth will compare the block that includes the bundle vs a vanilla Geth block, and will default back to the vanilla Geth block in case it is more profitable.
-* Only when the trader's bundle is included in a block is the tip associated to their bundle paid.
+* Only when the searcher's bundle is included in a block is the tip associated to their bundle paid.
   * a bundle that isn't included costs the sender nothing (ie. no gas fees are paid for failed transactions)
 
 This infrastructure allows:
-* traders to bypass the Ethereum mempool and avoid their strategy leaking before it is mined on-chain (i.e. being frontrun by generalized frontrunners)
-* traders to save money from avoiding to pay gas fees for failed transactions.
+* searchers to bypass the Ethereum mempool and avoid their strategy leaking before it is mined on-chain (i.e. being frontrun by generalized frontrunners)
+* searchers to save money from avoiding to pay gas fees for failed transactions.
 * miners to receive additional revenue in the form of the bundle tip, in exchange for including the most profitable bundle in the block they mined.
 
 Interested in learning more?
-<br> [Onboard Flashbots alpha as a trader](https://github.com/flashbots/pm/blob/main/guides/flashbots-alpha.md)
+<br> [Onboard Flashbots alpha as a searcher](https://github.com/flashbots/pm/blob/main/guides/flashbots-alpha.md)
 <br> [Onboard Flashbots alpha as a miner](https://github.com/flashbots/pm/blob/main/guides/miner-onboarding.md)
 <br> [Jan 2021 Transparency Report](https://medium.com/flashbots/flashbots-transparency-report-january-2021-922514de8b8a)
 <br> [Feb 2021 Transparency Report](https://medium.com/flashbots/flashbots-transparency-report-february-2021-8ac45b467d0a)
