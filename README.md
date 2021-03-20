@@ -48,7 +48,8 @@ This infrastructure allows:
 Interested in learning more?
 <br> [Onboard Flashbots alpha as a trader](https://github.com/flashbots/pm/blob/main/guides/flashbots-alpha.md)
 <br> [Onboard Flashbots alpha as a miner](https://github.com/flashbots/pm/blob/main/guides/miner-onboarding.md)
-<br> Read our [Jan 2021 Transparency Report](https://medium.com/flashbots/flashbots-transparency-report-january-2021-922514de8b8a)
+<br> [Jan 2021 Transparency Report](https://medium.com/flashbots/flashbots-transparency-report-january-2021-922514de8b8a)
+<br> [Feb 2021 Transparency Report](https://medium.com/flashbots/flashbots-transparency-report-february-2021-8ac45b467d0a)
 
 We are quickly iterating in public towards a permissionless infrastructure with full transaction privacy. We welcome all ecosystem participants to provide early technical feedback via Github issues and pull requests in the relevant [repos](https://github.com/flashbots), create open-source toolings to improve transparency within Flashbots ecosystem, and participate in ongoing discussions on Flashbots' [Discord](https://discord.gg/3TjWjBerRb)!
 
