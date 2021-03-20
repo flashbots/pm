@@ -3,12 +3,12 @@
 Flashbots is a research and development organization working on mitigating the negative externalities of current MEV extraction techniques and avoiding the existential risks MEV could cause to state-rich blockchains like Ethereum. Our primary focus is to enable a permissionless, transparent, and fair ecosystem for MEV extraction. It falls under three goals: Democratizing Access to MEV Revenue, Bringing Transparency to MEV Activity and Redistributing MEV Revenue.
 
 We've released two projects so far: 
-* Flashbots Alpha: a proof of concept communication channel between miners and traders for transparent and efficient MEV extraction.
+* Flashbots Alpha: a proof of concept communication channel between miners and searchers for transparent and efficient MEV extraction.
 * MEV-Explore: a public dashboard and live transactions explorer of MEV activity.
 
 You can interact with Flashbots on Discord and Github. We have dedicated channels on Discord for each of our efforts and welcome contributions. Our work is open source and you can follow our progress in each repository of the Flashbots organization. In addition, we hold several recurring community calls: a monthly MEV Roast, a bi-weekly research workshop and a monthly transparency call to update the community on our progress. 
 
-The current repository you're in provides an overview of our activities, and contains our [open job searches](https://github.com/flashbots/pm/tree/main/jobs) and the [onboarding documents](https://github.com/flashbots/pm/tree/main/guides) to start using the Alpha we've released, either as a miner or as a trader.
+The current repository you're in provides an overview of our activities, and contains our [open job searches](https://github.com/flashbots/pm/tree/main/jobs) and the [onboarding documents](https://github.com/flashbots/pm/tree/main/guides) to start using the Alpha we've released, either as a miner or as a searcher.
 
 Learn more about our values and our mission: [Flashbots - Frontrunning the MEV Crisis](https://medium.com/flashbots/frontrunning-the-mev-crisis-40629a613752)
 <br> Join us on Discord: [#Flashbots](https://discord.gg/7hvTycdNcK)
@@ -24,11 +24,11 @@ Learn more about our values and our mission: [Flashbots - Frontrunning the MEV C
 ----
 ## Flashbots Alpha
 
-On Jan 6th 2021, we entered the Flashbots Alpha phase by establishing a proof-of-concept communication channel between traders and miners. This proof-of-concept is made of two components: MEV-Geth, a slightly modified fork of the Ethereum Geth client, and MEV-Relay, a transaction bundle relayer.
+On Jan 6th 2021, we entered the Flashbots Alpha phase by establishing a proof-of-concept communication channel between traders (searchers) and miners. This proof-of-concept is made of two components: MEV-Geth, a slightly modified fork of the Ethereum Geth client, and MEV-Relay, a transaction bundle relayer.
 
 **How it works:**
 * Searchers send Flashbots "bundles" to MEV-Relay. A bundle contains:
-  * one or several transactions that can be the trader's and/or other users' pending transactions from the mempool
+  * one or several transactions that can be the searcher's and/or other users' pending transactions from the mempool
   * a sealed tip that is paid by the searcher to the miner via a smart contract call to `block.coinbase.transfer()`
 * Moreover, bundles have these properties:
   * There can only be a single bundle per block (we are working on bundle merging to enable multiple)
