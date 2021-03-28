@@ -200,35 +200,29 @@ These tests were done on an AWS m5.xlarge running MEV-geth. In practice, this sh
 
 During Flashbots Alpha phase, we suggest miner(s) and/or mining pool(s) use MEV-relay, and do not expose RPC endpoint, for three reasons:
 
-First, exposing your MEV-geth node's RPC endpoint without having taken the proper security measures opens you up to spam. We invest significant engineering resources into MEV-relay for spam prevention, scaling and other methods to ensure high reliability for MEV transaction bundle submitters.
+First, exposing your MEV-geth node's RPC endpoint without having taken the proper security measures opens you up to spam. We invest significant engineering resources spam prevention, rate limiting, bundle simulation and queuing to ensure high reliability for the network. In the future, Flashbots plans to iterate towards a decentralized approach to solving this problem through improving the design of MEV-relay.
 
 Secondly, during Alpha phase bootstrapping MEV searcher activities, Flashbots is responsible for keeping the uptime guarantee for the MEV searcher network. Exposing endpoints directly will make your infrastructure susceptible to attack vectors such as DDoS and may put the entire Flashbots network at risk and breaks our obligations to the searchers, which may reduce the MEV revenue on the Flashbots network.
 
 Lastly, during Alpha phase, we are collecting data on Flashbots network activities to improve Flashbots infrastructure. Therefore, we would prefer if more MEV transaction bundles are submitted through MEV-relay, which in turn will help us iterate towards next version. 
 
-### 17. For a miner and/or mining pool running MEV-geth, is using MEV-relay strictly better than publishing endpoint directly?
-
-During Alpha phase, we recommend that a miner and/or mining pool only whitelists MEV-relay IP address to receive RPC calls from it. MEV-relay implements spam prevention, rate limiting, bundle simulation and queuing to ensure high reliability for the network. In the future, Flashbots plans to iterate towards a decentralized approach to solving this problem through improving the design of MEV-relay.
-
-If a pool chooses to expose their MEV-Relay endpoint publicly they are responsible for spam/DoS prevention. 
-
 _Note: continuous degraded performance of miner(s) and/or mining pool(s)' endpoint may result in its temporary exclusion from the network._
 
-### 18. How does Flashbots plan to address HTTP inefficiency for high volume of bundles?
+### 17. How does Flashbots plan to address HTTP inefficiency for high volume of bundles?
 
 Future iterations of MEV-relay will implement WebSocket connection in order to improve performance of bundle submission.
 
-### 19. Can miners/mining pools choose to include only part of a Flashbots transaction bundle submitted through Flashbots?
+### 18. Can miners/mining pools choose to include only part of a Flashbots transaction bundle submitted through Flashbots?
 
 No, miner(s) and/or mining pool(s) running MEV-geth without modification cannot include only part of Flashbots transaction bundle. The current MEV-geth implementation includes entire transaction bundles. 
 
 Since miner payoff depends on MEV capture strategy success, removing a transaction from the bundle is likely to result in MEV not being captured, resulting in 0 payoff and exclusion of such bundle from the block.  
 
-### 20. How does Flashbots prevent malicious pool behavior in the system?
+### 19. How does Flashbots prevent malicious pool behavior in the system?
 
 During Alpha phase, Flashbots monitors flow of transaction bundles via MEV-relay and compares them vs. on-chain record. If malicious behavior like front-running incoming bundles or selling access to incoming bundles is detected, the miner(s) and/or mining pool(s) may be excluded from MEV-relay.
 
-### 21. Why shouldn't a miner collaborate with a trader directly by sharing Flashbots transaction bundle flow with them?
+### 20. Why shouldn't a miner collaborate with a trader directly by sharing Flashbots transaction bundle flow with them?
 
 Collusion between miner(s) and mining pool(s) on sharing transaction bundle flow will provide asymmetric advantage to certain traders of the ecosystem and potentially drive the best MEV searchers away, because the auction is no-longer fair.
 
