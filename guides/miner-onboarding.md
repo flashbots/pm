@@ -1,6 +1,8 @@
 # Flashbots Alpha - Miner Onboarding
 
-*A collection of relevant information for miners looking to participate in Flashbots Alpha. This is a living document that will be continuously updated as we receive more questions from you.*
+A collection of relevant information for miners looking to participate in Flashbots Alpha. This is a living document that will be continuously updated as we receive more questions from you.
+
+<br/> _Updated: 6.04.2021. Check Flashbots Discord [#release](https://discord.gg/Z26a7e2x) channel for the latest releases._ 
 
 ## Contents
 1. [Executive Summary](#Executive-Summary)
