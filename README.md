@@ -119,8 +119,11 @@ MEV Roast is a monthly discussion that stems from the research collective MEV Pi
 [/mev-geth-demo](https://github.com/flashbots/mev-geth-demo)
 <br> Launches an MEV GETH node, and shows how a miner may profit from it by accepting MEV bundles
 
+[/mev-proxy](https://github.com/flashbots/mev-proxy)
+<br> An example of a reverse proxy that a miner can run.
+
 [/mev-relay-js](https://github.com/flashbots/mev-relay-js)
-<br> The code for the entrypoint searchers send their Flashbots bundles to and miners connect to in order to receive bundles. Includes an example of a a reverse proxy that a miner can run.
+<br> The code for the entrypoint searchers send their Flashbots bundles to and miners connect to in order to receive bundles. Includes an example of a reverse proxy that a miner can run.
 
 [/ethers-provider-flashbots-bundle](https://github.com/flashbots/ethers-provider-flashbots-bundle)
 <br> Flashbots provider for ethers.js
