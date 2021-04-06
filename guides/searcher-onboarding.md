@@ -1,9 +1,8 @@
 # Flashbots Alpha - Searcher Onboarding
 
 A collection of relevant information for searchers looking to use Flashbots Alpha. This document will be continuously updated as we receive more questions from you.
-<br/> _Check Flashbots Discord [#release](https://discord.gg/Z26a7e2x) channel for the latest releases. 
 
-*Updated: 6.04.2021*
+<br/> _Updated: 6.04.2021. Check Flashbots Discord [#release](https://discord.gg/Z26a7e2x) channel for the latest releases._ 
 
 ## Contents
 1. [Summary](#summary)
