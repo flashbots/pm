@@ -45,7 +45,7 @@ To start receiving flashbots bundles from users, the miner needs to set a [rever
 We invite you to try Flashbots during this Alpha phase and start receiving MEV revenue by following these 4 steps:
 
 1. Fill out this [form](https://forms.gle/78JS52d22dwrgabi6) to indicate your interest in participating in the Alpha and be added to the MEV-relay miner whitelist. 
-2. You will receive an onboarding email from Flashbots to help [set up](https://github.com/flashbots/mev-geth/blob/master/README.md#quick-start) your MEV-geth node and protect it with a reverse proxy. 
+2. You will receive an onboarding email from Flashbots to help [set up](https://github.com/flashbots/mev-geth/blob/master/README.md#quick-start) your MEV-geth node and protect it with a [reverse proxy](https://github.com/flashbots/mev-proxy). 
 3. Respond to Flashbots' email with your MEV-geth node endpoint to be added to the MEV-relay gateway. 
 4. After receiving a confirmation email that your MEV-geth node's endpoint has been added to the relay, you will immediately start receiving Flashbots transaction bundles with associated MEV revenue paid to you.
 
@@ -241,6 +241,7 @@ This is not only relevant for profitability but also for stability of your reven
 * A technical overview of Flashbots the organization: https://ethresear.ch/t/flashbots-frontrunning-the-mev-crisis/8251
 * Our values and what we stand for: https://medium.com/flashbots/frontrunning-the-mev-crisis-40629a613752
 * Example arbitrage searcher: https://bit.ly/3hGbDtk
+* Miner Proxy: https://github.com/flashbots/mev-proxy
 * MEV-Relay repo: https://github.com/flashbots/mev-relay-js
 * Flashbots ethers.js provider: https://bit.ly/2MpNFXI
 * Searcher FAQ: https://bit.ly/2Xb3FiI
