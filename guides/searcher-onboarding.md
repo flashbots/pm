@@ -52,7 +52,7 @@ We go over this in further detail in the FAQ below.
 See you on-chain ! :zap:🤖
 
 Resources to get started:
-* Simple-arbitrage-searcher example bot we've open-sourced here: [simple-arbitrage-searcher]()
+* Simple-arbitrage-searcher example bot we've open-sourced here: [simple-arbitrage-searcher](https://github.com/flashbots/simple-arbitrage)
 * Dedicated [#🤖searchers](https://discord.gg/KNFBvZzJyT) channel on Discord!
 * Full [list](#resources) of resources
 
