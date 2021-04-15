@@ -68,7 +68,7 @@ Flashbots research and development are tightly-coupled dual engines that propel 
 - **Long-term oriented research efforts** spec out and update our roadmap, define our organization’s phases and identify key milestones associated with each of them;
 - **Milestone-oriented engineering efforts** ship core infrastructure and ecosystem tools, while collecting data and producing other artifacts that feed back into research.
 
-![FlashbotsOrg](Flashbots_org_transparent.png)
+![FlashbotsOrg](Flashbots_org_202104.png)
 
 ### Interested in contributing? 
 We are not your typical project, we are fully remote and our principles are based on that of a [pirate hacker collective](https://www.youtube.com/watch?v=T0fAznO1wA8). If you are a self-directed individual who puts collective success above your own and are motivated by solving hard problems with asymmetric impact, you will fit right in. 
