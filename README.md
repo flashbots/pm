@@ -68,7 +68,7 @@ Flashbots research and development are tightly-coupled dual engines that propel 
 - **Long-term oriented research efforts** spec out and update our roadmap, define our organization’s phases and identify key milestones associated with each of them;
 - **Milestone-oriented engineering efforts** ship core infrastructure and ecosystem tools, while collecting data and producing other artifacts that feed back into research.
 
-![FlashbotsOrg](Flashbots_org.png)
+![FlashbotsOrg](Flashbots_org_transparent.png)
 
 ### Interested in contributing? 
 We are not your typical project, we are fully remote and our principles are based on that of a [pirate hacker collective](https://www.youtube.com/watch?v=T0fAznO1wA8). If you are a self-directed individual who puts collective success above your own and are motivated by solving hard problems with asymmetric impact, you will fit right in. 
@@ -103,11 +103,19 @@ MEV Roast is a monthly discussion that stems from the research collective MEV Pi
 12 | Feb 25 | Hudson Jameson | MEV State Space Search: MEV from A to Z | [agenda](https://github.com/flashbots/pm/issues/16) | [slides](https://docs.google.com/presentation/d/1I0cTl74p3MF_ZSyfjoH4A3YC6nJkK3_Ot302jiNPs5I/edit#slide=id.gbfd4392ce8_0_5) | [video](https://drive.google.com/file/d/1RLWCdvd47PHLN_az762r3G00BsnBumnb/view?usp=sharing) |
 13 | Mar 25 | Vitalik Buterin | The Blockspace Bazaar: Past, Present & Future | [agenda](https://github.com/flashbots/pm/issues/44) | [slides](https://docs.google.com/presentation/d/1XxRHJrLNEEHQjQ00SISbmcuXi1063G7P_8WBEwOrmk4/edit?usp=sharing) | [video](https://zoom.us/rec/share/8jYUy6ITG_FIZ2eM_yiWG1_yYINGTgBLFVeTHE2qcUEc2CEK4O3cVNAeUSO12Pti._gUhGQx6bOI7swWs) |
 
+### Flashbots Community Calls
+
+Flashbots Community Calls is a monthly progress update from the Flashbots crew to provide transparency but also address community questions.  
+| No. |Date |Topic | Agenda | Slides | Recording | Transparency Report |
+|:---|:---|:---|---|---|---|:---|
+1 | Mar 4 | Update & MEV-searcher Workshop | [agenda](https://github.com/flashbots/pm/issues/21) | [slides](https://docs.google.com/presentation/d/1CpEgxIPab5xo6vY64xqq2hOSvcjYSEeOY8GjVLyPkOo/edit?usp=sharing) | [recording](https://drive.google.com/file/d/1AOL5MZxPvg9eAeXr8gTPYxb_UH92TZZC/view?usp=sharing) | [Februrary Transparency Report](https://medium.com/flashbots/flashbots-transparency-report-february-2021-8ac45b467d0a) |
+2 | Apr 15 | Update & Flashbots Dashboard Preview | [agenda](https://github.com/flashbots/pm/issues/67) | [slides] | [recording] | [March Transparency Report](https://medium.com/flashbots/flashbots-transparency-report-march-2021-d3930b4b98a9) |
+
+
 ### Other Flashbots resources
 * [Flashbots: Frontrunning the MEV crisis (Eth Research post)](https://ethresear.ch/t/flashbots-frontrunning-the-mev-crisis/8251)
 * [explore.flashbots.net](https://explore.flashbots.net)
 * [Flashbots Discord](https://discord.gg/7hvTycdNcK)
-
 
 ### Navigate Flashbots' Github
 [/pm](https://github.com/flashbots/pm)
