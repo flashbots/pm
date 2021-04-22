@@ -84,7 +84,7 @@ To submit bundles you must change the endpoint you're submitting to. Our endpoin
 You can use your node or usual data provider (e.g. Infura, Alchemy, etc) as a source of data. There is no need to run MEV-Geth on the searcher's side.
 
 ### How much do I pay the miner?
-** The most likely reason why your bundles aren't appearing on-chain is that you aren't paying the miner enough.** So how do you know how much to pay the miner. Unfortunately there isn't an easy answer to this question, but there are two high level considerations you should keep in mind.
+**The most likely reason why your bundles aren't appearing on-chain is that you aren't paying the miner enough.** So how do you know how much to pay the miner. Unfortunately there isn't an easy answer to this question, but there are two high level considerations you should keep in mind.
 
 The first consideration is that your bundle needs to be more profitable than the transactions it is displacing in a block. To be specific your bundle must beat out transactions that would have been included at the tail end of a block. These transactions have the least gas price, and your bundle must have a higher effective gas price than these as measured by the total coinbase payment of your bundle divided by the gas it consumes.
 
