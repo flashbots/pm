@@ -6,7 +6,7 @@ Welcome searcher :zap:🤖! Here you will find a collection of relevant informat
 
 ## Contents
 1. [Summary](#summary)
-2. (Tooling)
+2. [Tooling](#tooling)
 3. [FAQ](#frequently-asked-questions)
     * [General](#general)
     * [Implementation](#implementation)
@@ -106,7 +106,8 @@ If you want more resources before getting started:
 
 See you on-chain ! :zap:🤖
 
-## Tooling for searchers
+## Tooling
+Here is some tooling for searchers
 - [Ethers.js Flashbots bundle provider:](https://github.com/flashbots/ethers-provider-flashbots-bundle) an Ethers.js provider that makes it simple to send bundles to Flashbots. Note that this provider also gives searchers a simple way to simulate transactions as well.
 - [web3.py Flashbots bundle provider:](https://github.com/flashbots/web3-flashbots) an web3.py provider that makes it simple to send bundles to Flashbots. Note that this provider also gives searchers a simple way to simulate transactions as well.
 - [MEV-Blocks:](https://blocks.flashbots.net/) an APi for displaying Flashbots blocks and transactions. Very useful for getting information on bundles that were included in blocks.
