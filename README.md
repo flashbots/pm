@@ -103,7 +103,7 @@ MEV Roast is a monthly discussion that stems from the research collective MEV Pi
 11 | Jan 28 | Sunny Aggarwal | Privacy Solutions for MEV Minimization | [agenda](https://github.com/flashbots/pm/issues/6) | [slides](https://docs.google.com/presentation/d/1tvyDza7svyShgClosvAshg6qgs0LDIWiYwrPKGphnqQ/edit?usp=sharing) | [video](https://drive.google.com/file/d/1_4-E_i6WIDMNRDIgBIf0YiaJtm33XW9s/view?usp=sharing) |
 12 | Feb 25 | Hudson Jameson | MEV State Space Search: MEV from A to Z | [agenda](https://github.com/flashbots/pm/issues/16) | [slides](https://docs.google.com/presentation/d/1I0cTl74p3MF_ZSyfjoH4A3YC6nJkK3_Ot302jiNPs5I/edit#slide=id.gbfd4392ce8_0_5) | [video](https://drive.google.com/file/d/1RLWCdvd47PHLN_az762r3G00BsnBumnb/view?usp=sharing) |
 13 | Mar 25 | Vitalik Buterin | The Blockspace Bazaar: Past, Present & Future | [agenda](https://github.com/flashbots/pm/issues/44) | [slides](https://docs.google.com/presentation/d/1XxRHJrLNEEHQjQ00SISbmcuXi1063G7P_8WBEwOrmk4/edit?usp=sharing) | [video](https://zoom.us/rec/share/8jYUy6ITG_FIZ2eM_yiWG1_yYINGTgBLFVeTHE2qcUEc2CEK4O3cVNAeUSO12Pti._gUhGQx6bOI7swWs) |
-14 | May 6 | Justin Drake | Scaling Ethereum | [agenda](https://github.com/flashbots/pm/issues/72) | [slides](https://docs.google.com/presentation/d/1J_MbHPznkZTQYFRGvaQhEsNACkheiw9uhRm4NwZx3kc/edit?usp=sharing) |  |
+14 | May 6 | Justin Drake | Scaling Ethereum | [agenda](https://github.com/flashbots/pm/issues/72) | [slides](https://docs.google.com/presentation/d/1J_MbHPznkZTQYFRGvaQhEsNACkheiw9uhRm4NwZx3kc/edit?usp=sharing) | [video](https://youtu.be/krlAqKsdLkw) |
 
 ### Flashbots Community Calls
 
