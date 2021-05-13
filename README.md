@@ -51,9 +51,9 @@ This infrastructure allows:
 Interested in learning more?
 <br> [Onboard Flashbots alpha as a searcher](https://github.com/flashbots/pm/blob/main/guides/searcher-onboarding.md)
 <br> [Onboard Flashbots alpha as a miner](https://github.com/flashbots/pm/blob/main/guides/miner-onboarding.md)
-<br> [Jan 2021 Transparency Report](https://medium.com/flashbots/flashbots-transparency-report-january-2021-922514de8b8a)
-<br> [Feb 2021 Transparency Report](https://medium.com/flashbots/flashbots-transparency-report-february-2021-8ac45b467d0a)
-<br> [Mar 2021 Transparency Report](https://medium.com/flashbots/flashbots-transparency-report-march-2021-d3930b4b98a9)
+<br> [Transparency Reports](https://medium.com/flashbots/tagged/transparency-report)
+
+
 
 We are quickly iterating in public towards a permissionless infrastructure with full transaction privacy. We welcome all ecosystem participants to provide early technical feedback via Github issues and pull requests in the relevant [repos](https://github.com/flashbots), create open-source toolings to improve transparency within Flashbots ecosystem, and participate in ongoing discussions on Flashbots' [Discord](https://discord.gg/3TjWjBerRb)!
 
@@ -115,6 +115,9 @@ Flashbots Community Calls is a monthly progress update from the Flashbots crew t
 |:---|:---|:---|---|---|---|:---|
 1 | Mar 4 | Update & MEV-searcher Workshop | [agenda](https://github.com/flashbots/pm/issues/21) | [slides](https://docs.google.com/presentation/d/1CpEgxIPab5xo6vY64xqq2hOSvcjYSEeOY8GjVLyPkOo/edit?usp=sharing) | [recording](https://drive.google.com/file/d/1AOL5MZxPvg9eAeXr8gTPYxb_UH92TZZC/view?usp=sharing) | [Februrary Transparency Report](https://medium.com/flashbots/flashbots-transparency-report-february-2021-8ac45b467d0a) |
 2 | Apr 15 | Update & Flashbots Dashboard Preview | [agenda](https://github.com/flashbots/pm/issues/67) | [slides](https://docs.google.com/presentation/d/1224x7eaL9MCP93af8X3qGJ35QuBqNT-OJeGpE10plyQ/edit?usp=sharing) | [recording](https://zoom.us/rec/share/wZ3CnhN-vVoo35J4GAvwrn9xOxg17XsHHu0c2KH9ZUHJHQEvPFN82yaqInf8-q2H.My3Z1vP-rfR_y1Qr) | [March Transparency Report](https://medium.com/flashbots/flashbots-transparency-report-march-2021-d3930b4b98a9) |
+3 | May 13 | Update on v0.2, Flashbots Research & release of Flashbots Dashboard | [agenda](https://github.com/flashbots/pm/issues/73#issue-891158240) | [slides](https://docs.google.com/presentation/d/1hppwu2gUUY80n4mNjjb49GNwITRkkPheuWwgIjvr-EI/edit?usp=sharing) | [recording](https://zoom.us/rec/share/x4jSYPQAoSHH-cBuhxpORNnXAPpdT8ovCLTtlWgcSCR2hLpiFsKtYrjfnMFpTeq9.q6-p05D7zdiHeUdB) | [April Transparency Report](https://medium.com/flashbots/flashbots-transparency-report-april-2021-9fef4d8dde07) |
+
+
 
 
 ### Other Flashbots resources
