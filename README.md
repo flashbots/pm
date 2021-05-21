@@ -93,7 +93,7 @@ We are not your typical project, we are fully remote and our principles are base
 * [ETHOnline - Phil & Georgios Talk Miner Extractable Value](https://youtu.be/tv0CkmcoGkM)
 * [Quantifying MEV: Introducing MEV-Explore v0](https://medium.com/flashbots/quantifying-mev-introducing-mev-explore-v0-5ccbee0f6d02) by Flashbots
 
-You can check out a full list of MEV resources in our [Research Vault](https://github.com/flashbots/mev-research#ship-vault)
+You can check out a full list of MEV resources in our [Research Vault](https://github.com/flashbots/mev-research/blob/main/resources.md)
 
 ### MEV Roast Recordings!
 
