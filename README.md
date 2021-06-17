@@ -56,7 +56,7 @@ We are not your typical project, we are fully remote and our principles are base
 * [open job positions](https://github.com/flashbots/pm/tree/main/jobs) - full-time roles we're actively recruiting for.
 * [flashbots research fellowship](https://github.com/flashbots/mev-research/blob/main/research_fellowship.md) - we issue research grants to flashbots research proposals submitters. Find out more in our research repo.
 * flashbots part-time contractor - become a part-time contractor in Flashbots and join one of our ongoing projects. Reach out to the team to learn more!
-* nothing fits in the above? reach out at info@flashbots.net 
+* nothing fits in the above? reach out at jobs@flashbots.net 
 
 ## Resources
 
