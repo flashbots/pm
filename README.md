@@ -124,6 +124,7 @@ Flashbots Community Calls is a monthly progress update from the Flashbots crew t
 * [Flashbots: Frontrunning the MEV crisis (Eth Research post)](https://ethresear.ch/t/flashbots-frontrunning-the-mev-crisis/8251)
 * [explore.flashbots.net](https://explore.flashbots.net)
 * [Flashbots Discord](https://discord.gg/7hvTycdNcK)
+* [Epicenter podcast](https://youtu.be/YfNeKo8FVjc), [ZK Podcast](https://youtu.be/p5L39ab7n4k), [Bankless podcast](https://youtu.be/rOVz7dOrGyY)
 
 ### Navigate Flashbots' Github
 [/pm](https://github.com/flashbots/pm)
