@@ -48,7 +48,7 @@ The Flashbots Dashboard is a collection of real time metrics on the Flashbots ne
 
 We are building Flashbots Research as a research hub for MEV, tackling and uncovering questions relevant to the short, medium and long-term future of the ecosystem. We view this research as essential to help the cryptocurrency ecosystem better understand and deal with MEV. We are currently funded through venture capital but aim to build a sustainable self-funded independent research organization that can become a place where ambitious researchers can work amongst like-minded individuals on the most interesting research questions unencumbered from the usual friction of academia.
 
-Some of the research we've released includes: [an early exploration of MEV in eth2](https://hackmd.io/@flashbots/mev-in-eth2), a framework to [quantify Realized Extractable Value](https://hackmd.io/@flashbots/quantifying-REV) and a proposal for [a sealed bid MEV auction design based on SGX](https://ethresear.ch/t/mev-sgx-a-sealed-bid-mev-auction-design/9677).
+Some of the research we've released includes: [an early exploration of MEV in eth2](https://hackmd.io/@flashbots/mev-in-eth2), a framework to [quantify Realized Extractable Value](https://hackmd.io/@flashbots/quantifying-REV) and a proposal for [a sealed bid MEV auction design using secure enclaves](https://ethresear.ch/t/mev-sgx-a-sealed-bid-mev-auction-design/9677).
 
 Learn more about our research efforts and how you can contribute to them on our [Flashbots Research repository](https://github.com/flashbots/mev-research).
 
