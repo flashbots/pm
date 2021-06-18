@@ -3,7 +3,7 @@
 Flashbots is a research and development organization working on mitigating the negative externalities of current MEV extraction techniques and avoiding the existential risks MEV could cause to state-rich blockchains like Ethereum. Our primary focus is to enable a permissionless, transparent, and fair ecosystem for MEV extraction. It falls under three goals: Bringing Transparency to MEV Activity, Democratizing Access to MEV Revenue and Enabling Fair Redistribution of MEV Revenue
 
 Our efforts are focused on three verticals:
-* Flashbots Core: a private communication channel between miners and searchers for transparent and efficient MEV extraction.
+* Flashbots Auction: a private communication channel between miners and searchers for transparent and efficient MEV extraction.
 * Flashbots Data: a suite of tools for increasing MEV transparency and reducing information asymmetry.
 * Flashbots Research: an open, transparent, and collaborative research effort to tackle short and long term research questions relevant to MEV.
 
@@ -21,17 +21,17 @@ Learn more about our values and our mission: [Flashbots - Frontrunning the MEV C
 
 ### Index:
 * [Introduction](https://github.com/flashbots/pm#flashbots)
-* [Flashbots Core, Data & Research](https://github.com/flashbots/pm#flashbots-core)
+* [Flashbots Auction, Data & Research](https://github.com/flashbots/pm#flashbots-auction)
 * [Our organization & ways you can contribute](https://github.com/flashbots/pm#our-organization)
 * [List of resources, MEV Roasts recordings and how to navigate Flashbots' github](https://github.com/flashbots/pm#resources)
 
 
 ----
-## Flashbots Core
+## Flashbots Auction
 
-Flashbots Core is a permissionless, transparent, and fair ecosystem for efficient MEV extraction and frontrunning protection which preserves the ideals of Ethereum. Flashbots Core provides a private communication channel between Ethereum users and miners for efficiently communicating preferred transaction order within a block. Flashbots Core consists of mev-geth, a patch on top of the go-ethereum client, along with the mev-relay, a transaction bundle relayer.
+Flashbots Auction is a permissionless, transparent, and fair ecosystem for efficient MEV extraction and frontrunning protection which preserves the ideals of Ethereum. Flashbots Auction provides a private communication channel between Ethereum users and miners for efficiently communicating preferred transaction order within a block. Flashbots Auction consists of mev-geth, a patch on top of the go-ethereum client, along with the mev-relay, a transaction bundle relayer.
 
-Learn more about Flashbots Core in our [documentation](https://docs.flashbots.net/flashbots-core/overview), and start using it as a [miner](https://docs.flashbots.net/flashbots-core/miners/quick-start) or as a [searcher](https://docs.flashbots.net/flashbots-core/searchers/quick-start)!
+Learn more about Flashbots Auction in our [documentation](https://docs.flashbots.net/flashbots-auction/overview), and start using it as a [miner](https://docs.flashbots.net/flashbots-auction/miners/quick-start) or as a [searcher](https://docs.flashbots.net/flashbots-auction/searchers/quick-start)!
 
 We are quickly iterating in public towards a permissionless infrastructure with full transaction privacy. We welcome all ecosystem participants to provide early technical feedback via Github issues and pull requests in the relevant [repos](https://github.com/flashbots), create open-source toolings to improve transparency within Flashbots ecosystem, and participate in ongoing discussions on Flashbots' [Discord](https://discord.gg/3TjWjBerRb)!
 
