@@ -7,7 +7,7 @@ Our efforts are focused on three verticals:
 * Flashbots Data: a suite of tools for increasing MEV transparency and reducing information asymmetry.
 * Flashbots Research: an open, transparent, and collaborative research effort to tackle short and long term research questions relevant to MEV.
 
-The Flashbots organization is funded by long term capital partners with a track record of alignment with the ecosystem. Our current capital partner is Paradigm.
+The Flashbots organization is funded by long term capital partners with a track record of alignment with the ecosystem. Our current capital partner is [Paradigm](https://paradigm.xyz/).
 
 You can interact with Flashbots on Discord and Github. We have dedicated channels on Discord for each of our efforts and welcome contributions. Our work is open source and you can follow our progress in each repository of the Flashbots organization. In addition, we hold several recurring community calls: a monthly MEV Roast, a bi-weekly research workshop and a monthly transparency call to update the community on our progress. 
 
@@ -78,7 +78,7 @@ We are not your typical project, we are fully remote and our principles are base
 * [ETHOnline - Phil & Georgios Talk Miner Extractable Value](https://youtu.be/tv0CkmcoGkM)
 * [Quantifying MEV: Introducing MEV-Explore v0](https://medium.com/flashbots/quantifying-mev-introducing-mev-explore-v0-5ccbee0f6d02) by Flashbots
 
-You can check out a full list of MEV resources in our [Research Vault](https://github.com/flashbots/mev-research/blob/main/resources.md)
+You can check out a full list of MEV resources in our [Research Vault](https://github.com/flashbots/mev-research/blob/main/resources.md).
 
 ### MEV Roast Recordings!
 
