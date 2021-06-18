@@ -1,71 +1,56 @@
 # Flashbots
 
-Flashbots is a research and development organization working on mitigating the negative externalities of current MEV extraction techniques and avoiding the existential risks MEV could cause to state-rich blockchains like Ethereum. Our primary focus is to enable a permissionless, transparent, and fair ecosystem for MEV extraction. It falls under three goals: 
-* Bringing Transparency to MEV Activity
-* Democratizing Access to MEV Revenue
-* Enabling Fair Redistribution of MEV Revenue
+Flashbots is a research and development organization working on mitigating the negative externalities of current MEV extraction techniques and avoiding the existential risks MEV could cause to state-rich blockchains like Ethereum. Our primary focus is to enable a permissionless, transparent, and fair ecosystem for MEV extraction. It falls under three goals: Bringing Transparency to MEV Activity, Democratizing Access to MEV Revenue and Enabling Fair Redistribution of MEV Revenue
 
-We've released two projects so far: 
-* Flashbots Alpha: a proof of concept communication channel between miners and searchers for transparent and efficient MEV extraction.
-* MEV-Explore: a public dashboard and live transactions explorer of MEV activity.
+Our efforts are focused on three verticals:
+* Flashbots Core: a private communication channel between miners and searchers for transparent and efficient MEV extraction.
+* Flashbots Data: a suite of tools for increasing MEV transparency and reducing information asymmetry.
+* Flashbots Research: an open, transparent, and collaborative research effort to tackle short and long term research questions relevant to MEV.
+
+The Flashbots organization is funded by long term capital partners with a track record of alignment with the ecosystem. Our current capital partner is [Paradigm](https://paradigm.xyz/).
 
 You can interact with Flashbots on Discord and Github. We have dedicated channels on Discord for each of our efforts and welcome contributions. Our work is open source and you can follow our progress in each repository of the Flashbots organization. In addition, we hold several recurring community calls: a monthly MEV Roast, a bi-weekly research workshop and a monthly transparency call to update the community on our progress. 
 
-The current repository you're in provides an overview of our activities, and contains our [open job searches](https://github.com/flashbots/pm/tree/main/jobs) and the [onboarding documents](https://github.com/flashbots/pm/tree/main/guides) to start using the Alpha we've released, either as a miner or as a searcher.
+The current repository you're in provides an overview of our activities, and contains our [open job searches](https://github.com/flashbots/pm/tree/main/jobs) and the [onboarding documents](https://github.com/flashbots/pm/tree/main/guides) to start using Flashbots, either as a miner or as a searcher.
 
 Learn more about our values and our mission: [Flashbots - Frontrunning the MEV Crisis](https://medium.com/flashbots/frontrunning-the-mev-crisis-40629a613752)
 <br> Join us on Discord: [#Flashbots](https://discord.gg/7hvTycdNcK)
 <br> Subscribe to our public calendar [here](https://bit.ly/3uJAHpo)
+<br> Read our [monthly transparency reports](https://medium.com/flashbots/tagged/transparency-report)
+<br> Read our [documentation](https://docs.flashbots.net)
 
 ### Index:
 * [Introduction](https://github.com/flashbots/pm#flashbots)
-* [Flashbots Alpha](https://github.com/flashbots/pm#flashbots-alpha)
-* [MEV-Explore](https://github.com/flashbots/pm#mev-explore)
+* [Flashbots Core, Data & Research](https://github.com/flashbots/pm#flashbots-core)
 * [Our organization & ways you can contribute](https://github.com/flashbots/pm#our-organization)
 * [List of resources, MEV Roasts recordings and how to navigate Flashbots' github](https://github.com/flashbots/pm#resources)
 
+
 ----
-## Flashbots Alpha
+## Flashbots Core
 
-On Jan 6th 2021, we entered the Flashbots Alpha phase by establishing a proof-of-concept communication channel between traders (searchers) and miners. This proof-of-concept is made of two components: MEV-Geth, a slightly modified fork of the Ethereum Geth client, and MEV-Relay, a transaction bundle relayer.
+Flashbots Core is a permissionless, transparent, and fair ecosystem for efficient MEV extraction and frontrunning protection which preserves the ideals of Ethereum. Flashbots Core provides a private communication channel between Ethereum users and miners for efficiently communicating preferred transaction order within a block. Flashbots Core consists of mev-geth, a patch on top of the go-ethereum client, along with the mev-relay, a transaction bundle relayer.
 
-**How it works:**
-* Searchers send Flashbots "bundles" to MEV-Relay. A bundle contains:
-  * one or several transactions that can be the searcher's and/or other users' pending transactions from the mempool
-  * a sealed tip that is paid by the searcher to the miner via a smart contract call to `block.coinbase.transfer()`
-* Moreover, bundles have these properties:
-  * There can only be a single bundle per block (we are working on bundle merging to enable multiple)
-  * Flashbots bundles will always be at the top slot of the block
-* MEV-Relay receives bundles and sends them to all whitelisted MEV-Geth miners
-* Miners receive Flashbots bundles from MEV-Relay and process them in MEV-Geth
-* MEV-Geth picks the most profitable bundle out of all bundles it is sent.
-* MEV-Geth then compares the block that includes this bundle with a vanilla block that does not include any bundles. If it is more profitable to include a bundle MEV-Geth will do so, but otherwise it will default back to a vanilla Geth block.
-* Only when the a searcher's bundle is included in a block is the tip associated with their bundle paid.
-  * If a bundle is not included it does not cost the searcher anything (i.e. no gas fees are paid for failed transactions)
-
-This infrastructure allows:
-* searchers to bypass the Ethereum mempool and avoid their strategy leaking before it is mined on-chain (i.e. being frontrun by generalized frontrunners)
-* searchers to save money from avoiding to pay gas fees for failed transactions.
-* miners to receive additional revenue in the form of the bundle tip, in exchange for including the most profitable bundle in the block they mined.
-
-Interested in learning more?
-<br> [Onboard Flashbots alpha as a searcher](https://github.com/flashbots/pm/blob/main/guides/searcher-onboarding.md)
-<br> [Onboard Flashbots alpha as a miner](https://github.com/flashbots/pm/blob/main/guides/miner-onboarding.md)
-<br> [Transparency Reports](https://medium.com/flashbots/tagged/transparency-report)
-
-
+Learn more about Flashbots Core in our [documentation](https://docs.flashbots.net/flashbots-core/overview), and start using it as a [miner](https://docs.flashbots.net/flashbots-core/miners/quick-start) or as a [searcher](https://docs.flashbots.net/flashbots-core/searchers/quick-start)!
 
 We are quickly iterating in public towards a permissionless infrastructure with full transaction privacy. We welcome all ecosystem participants to provide early technical feedback via Github issues and pull requests in the relevant [repos](https://github.com/flashbots), create open-source toolings to improve transparency within Flashbots ecosystem, and participate in ongoing discussions on Flashbots' [Discord](https://discord.gg/3TjWjBerRb)!
 
-## MEV-Explore
 
-On Jan 22 2021, we released [MEV-Explore v0](https://explore.flashbots.net) a public dashboard and live transaction explorer for MEV transactions. 
+## Flashbots Data
 
-How much MEV has been extracted on Ethereum? How much MEV do DeFi traders and bot operators capture? How much gas was spent on MEV transactions that went to the miners who mined the proof of work solutions with the MEV transactions? What are the most common types of MEV extraction strategies? Which DeFi protocols contain the most MEV? How much network resources do successful and failed MEV transactions take up?
+Flashbots Data currently consists of [MEV-Explore v0](https://explore.flashbots.net) a public dashboard and live transaction explorer for MEV transactions, and the [Flashbots dashboard](https://dashboard.flashbots.net) a public dashboard of the activity taking place on Flashbots.
 
-With these questions in mind, we scraped Ethereum, covering over 8 major DeFi protocols and their clones, and collected more than 1.3 million MEV transactions that landed on-chain since Jan 1 2020 to provide a preliminary lower-bound to Extracted MEV. With the release of MEV-Explore, we're taking our first step at bringing transparency to MEV by quantifying the MEV that has been extracted on-chain.
+MEV-Explore crawls the Ethereum blockchain and classifies MEV transactions over 8 major DeFi protocols and their clones. The code that feeds data into it is open-source and accessible through [mev-inspect](https://github.com/flashbots/mev-inspect-rs).
 
-[Quantifying MEV: Introducing MEV-Explore v0 (blogpost)](https://medium.com/flashbots/quantifying-mev-introducing-mev-explore-v0-5ccbee0f6d02)
+The Flashbots Dashboard is a collection of real time metrics on the Flashbots network that goes back to the first pre-release test bundle mined on-chain on December 29, 2021.
+
+## Flashbots Research
+
+We are building Flashbots Research as a research hub for MEV, tackling and uncovering questions relevant to the short, medium and long-term future of the ecosystem. We view this research as essential to help the cryptocurrency ecosystem better understand and deal with MEV. We are currently funded through venture capital but aim to build a sustainable self-funded independent research organization that can become a place where ambitious researchers can work amongst like-minded individuals on the most interesting research questions unencumbered from the usual friction of academia.
+
+Some of the research we've released includes: [an early exploration of MEV in eth2](https://hackmd.io/@flashbots/mev-in-eth2), a framework to [quantify Realized Extractable Value](https://hackmd.io/@flashbots/quantifying-REV) and a proposal for [a sealed bid MEV auction design using secure enclaves](https://ethresear.ch/t/mev-sgx-a-sealed-bid-mev-auction-design/9677).
+
+Learn more about our research efforts and how you can contribute to them on our [Flashbots Research repository](https://github.com/flashbots/mev-research).
 
 ## Our organization
 Flashbots research and development are tightly-coupled dual engines that propel the organization in a phased approach:
@@ -78,9 +63,9 @@ Flashbots research and development are tightly-coupled dual engines that propel 
 We are not your typical project, we are fully remote and our principles are based on that of a [pirate hacker collective](https://www.youtube.com/watch?v=T0fAznO1wA8). If you are a self-directed individual who puts collective success above your own and are motivated by solving hard problems with asymmetric impact, you will fit right in. 
 
 * [open job positions](https://github.com/flashbots/pm/tree/main/jobs) - full-time roles we're actively recruiting for.
-* [flashbots research fellowship](https://github.com/flashbots/mev-research/blob/main/research_fellowship.md) - we issue research grants to flashbots research proposals submitters. Find out more in our research repo.
+* [MEV research fellowship](https://github.com/flashbots/mev-research/blob/main/grants.md) - we issue research grants to flashbots research proposals submitters. 
 * flashbots part-time contractor - become a part-time contractor in Flashbots and join one of our ongoing projects. Reach out to the team to learn more!
-* nothing fits in the above? reach out at info@flashbots.net 
+* nothing fits in the above? reach out at jobs@flashbots.net 
 
 ## Resources
 
@@ -93,7 +78,7 @@ We are not your typical project, we are fully remote and our principles are base
 * [ETHOnline - Phil & Georgios Talk Miner Extractable Value](https://youtu.be/tv0CkmcoGkM)
 * [Quantifying MEV: Introducing MEV-Explore v0](https://medium.com/flashbots/quantifying-mev-introducing-mev-explore-v0-5ccbee0f6d02) by Flashbots
 
-You can check out a full list of MEV resources in our [Research Vault](https://github.com/flashbots/mev-research/blob/main/resources.md)
+You can check out a full list of MEV resources in our [Research Vault](https://github.com/flashbots/mev-research/blob/main/resources.md).
 
 ### MEV Roast Recordings!
 
@@ -117,13 +102,9 @@ Flashbots Community Calls is a monthly progress update from the Flashbots crew t
 2 | Apr 15 | Update & Flashbots Dashboard Preview | [agenda](https://github.com/flashbots/pm/issues/67) | [slides](https://docs.google.com/presentation/d/1224x7eaL9MCP93af8X3qGJ35QuBqNT-OJeGpE10plyQ/edit?usp=sharing) | [recording](https://zoom.us/rec/share/wZ3CnhN-vVoo35J4GAvwrn9xOxg17XsHHu0c2KH9ZUHJHQEvPFN82yaqInf8-q2H.My3Z1vP-rfR_y1Qr) | [March Transparency Report](https://medium.com/flashbots/flashbots-transparency-report-march-2021-d3930b4b98a9) |
 3 | May 13 | Update on v0.2, Flashbots Research & release of Flashbots Dashboard | [agenda](https://github.com/flashbots/pm/issues/73#issue-891158240) | [slides](https://docs.google.com/presentation/d/1hppwu2gUUY80n4mNjjb49GNwITRkkPheuWwgIjvr-EI/edit?usp=sharing) | [recording](https://zoom.us/rec/share/x4jSYPQAoSHH-cBuhxpORNnXAPpdT8ovCLTtlWgcSCR2hLpiFsKtYrjfnMFpTeq9.q6-p05D7zdiHeUdB) | [April Transparency Report](https://medium.com/flashbots/flashbots-transparency-report-april-2021-9fef4d8dde07) |
 
-
-
-
 ### Other Flashbots resources
 * [Flashbots: Frontrunning the MEV crisis (Eth Research post)](https://ethresear.ch/t/flashbots-frontrunning-the-mev-crisis/8251)
-* [explore.flashbots.net](https://explore.flashbots.net)
-* [Flashbots Discord](https://discord.gg/7hvTycdNcK)
+* [Quantifying MEV: Introducing MEV-Explore v0](https://medium.com/flashbots/quantifying-mev-introducing-mev-explore-v0-5ccbee0f6d02)
 * [Epicenter podcast](https://youtu.be/YfNeKo8FVjc), [ZK Podcast](https://youtu.be/p5L39ab7n4k), [Bankless podcast](https://youtu.be/rOVz7dOrGyY)
 
 ### Navigate Flashbots' Github
