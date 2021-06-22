@@ -1,8 +1,27 @@
-# Data Engineer
+# Lead Data Engineer (Python)
 
 ## Description
 
-Flashbots is looking for a data engineer with experience architecting, optimizing, and maintaining data infrastructure. You will own and be responsible for all Flashbots data pipelines aggregating data across our services and servicing research and product teams with data needs. You must have some existing understanding of DeFi protocols and ability to create / improve [mev-inspect codebase](https://github.com/flashbots/mev-inspect-rs).
+Data is at the core of understanding the complex landscape of MEV and it is central to Flashbots as an organization. We are looking for a talented and passionate engineer who would like to contribute to the Flashbots community by improving and expanding our existing data infrastructure. Projects include architecting and implementing tools for extracting information from blockchains, including Ethereum, Ethereum Sidechains, and Layer 2 systems, to help classify and understand the MEV that is currently being captured across the entire ecosystem. You will own and be responsible for Flashbots' data pipelines, will work together with Research  and Product teams to support their data needs, and work with open source contributors to continuously expand and improve Flashbots' reporting capabilities.
+
+### Requirements
+* 5+ years professional engineering experience, OR public work demonstrating your ability.
+* 1+ Year experience with developing for ethereum or other EVM-based systems, OR public projects which demonstrate your ability and understanding.
+* An understanding of the current DeFi protocols
+* Experience with Python and SQL
+* Experience architecting maintainable applications
+* Experience writing performant data analytics applications and databases
+
+### Nice-to-haves
+* Experience leading small teams as a team lead or architect
+* Experience with Brownie
+* Experience with Metabase
+* Experience with Typescript, RUST, and Solidity
+* Experience with AWS, RDS, and Postgresql
+
+### Current Open Source Projects
+* [mev-inspect](https://github.com/flashbots/mev-inspect-rs)
+* [mev-explore](https://github.com/flashbots/mev-explore-public)
 
 ## Flashbots
 
@@ -12,4 +31,4 @@ If you are a self-directed individual who puts collective success above your own
 
 ## Contact
 
-info@flashbots.net
+jobs@flashbots.net
