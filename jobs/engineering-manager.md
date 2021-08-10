@@ -2,7 +2,7 @@
 
 ## Description
 
-Senior engineering manager to coordinate efforts across the Flashbots organization. You will work with product managers in setting development timelines for Flashbots Core, Flashbots Data, and Flashbots Documentation. You will be responsible for orchestrating the delivery of key strategic projects by leveraging engineering resources across the organization. You will be expected to define and execute on our engineering organization needs from recruitment, processes, and security.
+Senior engineering manager to coordinate efforts across the Flashbots organization. You will work with product managers in setting development timelines for Flashbots Auction, Flashbots Data, and Flashbots Documentation. You will be responsible for orchestrating the delivery of key strategic projects by leveraging engineering resources across the organization. You will be expected to define and execute on our engineering organization needs from recruitment, processes, and security.
 
 ## Flashbots
 
@@ -12,4 +12,4 @@ If you are a self-directed individual who puts collective success above your own
 
 ## Contact
 
-info@flashbots.net
+jobs@flashbots.net
