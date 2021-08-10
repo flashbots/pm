@@ -12,4 +12,4 @@ If you are a self-directed individual who puts collective success above your own
 
 ## Contact
 
-info@flashbots.net
+jobs@flashbots.net
