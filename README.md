@@ -70,7 +70,7 @@ We are not your typical project, we are fully remote and our principles are base
 ## Resources
 
 ### New to MEV? Here's where to get started
-* [Ethereum is a Dark Forest](https://medium.com/@danrobinson/ethereum-is-a-dark-forest-ecc5f0505dff) by Dan Robinson & Georgios Konstantopoulos
+* [Ethereum is a Dark Forest](https://www.paradigm.xyz/2020/08/ethereum-is-a-dark-forest/) by Dan Robinson & Georgios Konstantopoulos
 * [How to get Front-Run on Ethereum mainnet](https://youtu.be/UZ-NNd6yjFM) by Scott Bigelow
 * [Escaping the Dark Forest](https://samczsun.com/escaping-the-dark-forest/) by samczsun
 * [Frontrunning in DEXs, Miner Extractable Value, and Consensus Instability](https://youtu.be/vR1v7AQ8i3k) by Phil Daian at IEEE Symposium on Security and Privacy
