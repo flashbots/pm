@@ -42,7 +42,7 @@ Flashbots Data currently consists of [MEV-Explore v0](https://explore.flashbots.
 
 MEV-Explore crawls the Ethereum blockchain and classifies MEV transactions over 8 major DeFi protocols and their clones. The code that feeds data into it is open-source and accessible through [mev-inspect](https://github.com/flashbots/mev-inspect-rs).
 
-The Flashbots Dashboard is a collection of real time metrics on the Flashbots network that goes back to the first pre-release test bundle mined on-chain on December 29, 2021.
+The Flashbots Dashboard is a collection of real time metrics on the Flashbots network that goes back to the first pre-release test bundle mined on-chain on December 29, 2020.
 
 ## Flashbots Research
 
