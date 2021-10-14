@@ -11,7 +11,7 @@ The Flashbots organization is funded by long term capital partners with a track 
 
 You can interact with Flashbots on Discord and Github. We have dedicated channels on Discord for each of our efforts and welcome contributions. Our work is open source and you can follow our progress in each repository of the Flashbots organization. In addition, we hold several recurring community calls: a monthly MEV Roast, a bi-weekly research workshop and a monthly transparency call to update the community on our progress. 
 
-The current repository you're in provides an overview of our activities, and contains our [open job searches](https://github.com/flashbots/pm/tree/main/jobs) and the [onboarding documents](https://github.com/flashbots/pm/tree/main/guides) to start using Flashbots, either as a miner or as a searcher.
+The current repository you're in provides an overview of our activities, and contains our [open job searches](https://www.notion.so/flashbots/Flashbots-Job-Board-94d53cb01ef04a9484711dacf18739e3) and the [onboarding documents](https://github.com/flashbots/pm/tree/main/guides) to start using Flashbots, either as a miner or as a searcher.
 
 Learn more about our values and our mission: [Flashbots - Frontrunning the MEV Crisis](https://medium.com/flashbots/frontrunning-the-mev-crisis-40629a613752)
 <br> Join us on Discord: [#Flashbots](https://discord.gg/7hvTycdNcK)
