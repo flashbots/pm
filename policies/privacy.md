@@ -2,19 +2,19 @@
 Flashbots Ltd  
 Updated December 10, 2021  
 
-Flashbots Ltd. (the “Company”) is a company incorporated under the laws of the Cayman Islands.
+Flashbots Ltd. (the “**Company**”) is a company incorporated under the laws of the Cayman Islands.
 
-The purpose of this document is to provide you with information on the Company's use of your personal data in accordance with the Cayman Islands Data Protection Act, 2017 and, in respect of any EU data subjects, the EU General Data Protection Regulation (together, the "Data Protection Legislation").  For individuals in California, please see California notices below.
+The purpose of this document is to provide you with information on the Company's use of your personal data in accordance with the Cayman Islands Data Protection Act, 2017 and, in respect of any EU data subjects, the EU General Data Protection Regulation (together, the "**Data Protection Legislation**").  For individuals in California, please see California notices below.
 
-The Company operates Flashbots Relay and receives information through its authentication process and through the Relay process (between a “Transaction Submitter” and a “Transaction Acceptor.”).
+The Company operates Flashbots Relay and receives information through its authentication process and through the Relay process (between a “**Transaction Submitter**” and a “**Transaction Acceptor**”).
 
 To the extent that the Company receives personal information of individuals through Miner Authentication, this will affect you directly.  If you are an institutional or collective participant in Flashbots Relay that provides us with personal data on individuals connected to you for any reason in relation to your participation in the Flashbots Relay or through other communications including Discord, this will be relevant for those individuals and you should transmit this document to such individuals or otherwise advise them of its content.
 
-Your personal data, if any, may be processed by the Company, and by persons engaged by the Company.  Under the Data Protection Legislation, you have rights, and the Company has obligations, with respect to your personal data.  The purpose of this notice is to explain how and why the Company, and persons engaged by the Company, will use, store, share and otherwise process your personal data. This notice also sets out your rights under the Data Protection Legislation, and how you may exercise them. 
+*Your personal data, if any, may be processed by the Company, and by persons engaged by the Company.  Under the Data Protection Legislation, you have rights, and the Company has obligations, with respect to your personal data.  The purpose of this notice is to explain how and why the Company, and persons engaged by the Company, will use, store, share and otherwise process your personal data. This notice also sets out your rights under the Data Protection Legislation, and how you may exercise them.*
 
 ### YOUR PERSONAL DATA
 
-By virtue of being either a Transaction Submitter or a Transaction Acceptor (the “Services”),   (including the initial application and ongoing interactions with the Company and any affiliates and persons engaged by the Company) or by virtue of you otherwise providing us with personal information on individuals connected with you (for example directors, trustees, employees, representatives, shareholders, investors, clients, beneficial owners or agents), you may provide us with certain personal information which constitutes personal data within the meaning of the Data Protection Legislation. 
+By virtue of being either a Transaction Submitter or a Transaction Acceptor (the “**Services**”), (including the initial application and ongoing interactions with the Company and any affiliates and persons engaged by the Company) or by virtue of you otherwise providing us with personal information on individuals connected with you (for example directors, trustees, employees, representatives, shareholders, investors, clients, beneficial owners or agents), you may provide us with certain personal information which constitutes personal data within the meaning of the Data Protection Legislation. 
 
 We may also obtain personal data on you from other publicly accessible directories and sources. These may include websites; blockchains, bankruptcy registers; tax authorities; governmental agencies and departments, and regulatory authorities, to whom we have regulatory obligations; credit reference agencies; sanctions screening databases; and fraud prevention and detection agencies and organisations, including law enforcement.
 
