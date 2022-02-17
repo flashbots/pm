@@ -4,7 +4,7 @@ Flashbots is a research and development organization working on mitigating the n
 
 Our efforts are separated into three sub-organizations:
 * **Product**: an engineering effort to build products to fulfill our mission. This includes the [Flashbots Auction](https://docs.flashbots.net/flashbots-auction/overview) with the Flashbots Relay, the [Flashbots Protect RPC](https://docs.flashbots.net/flashbots-protect/overview), [MEV-Inspect](https://docs.flashbots.net/flashbots-data/mev-inspect-py/overview), [MEV-Explore](https://explore.flashbots.net) and [MEV-Boost](https://ethresear.ch/t/mev-boost-merge-ready-flashbots-architecture/11177).
-* **Coordination**: an organizational effort to streamline operational processes, interface with external teams in the ecosystem and scale our efforts to maximize the organization's impact.
+* **Coordination**: an organizational effort to streamline operational processes, interface with external teams in the ecosystem and scale ourselves to maximize the organization's impact.
 * **Research**: an open, transparent, and [collaborative research effort](https://github.com/flashbots/mev-research) to tackle short and long term research questions relevant to MEV.
 
 Flashbots Research and Product are tightly-coupled dual engines that propel the organization in a phased approach:
