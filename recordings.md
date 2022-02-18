@@ -1,6 +1,6 @@
-### Flashbots MEV Roasts & Community Calls
+# Flashbots MEV Roasts & Community Calls
 
-### MEV Roast Recordings!
+## MEV Roast Recordings!
 
 MEV Roast is a bi-monthly discussion that stems from the research collective MEV Pi-rate Ship tradition. It's meant to service as a communication bridge between Flashbots and the broader community interested in understanding MEV and contribute to our research and engineering efforts. The format of our Roast is meant to invite constructive criticism on the Flashbots efforts and to address open questions.
 | No. |Date | Roast Master | Topic | Agenda | Notes | Recording |
@@ -14,6 +14,8 @@ MEV Roast is a bi-monthly discussion that stems from the research collective MEV
 14 | May 6 | Justin Drake | Scaling Ethereum | [agenda](https://github.com/flashbots/pm/issues/72) | [slides](https://docs.google.com/presentation/d/1J_MbHPznkZTQYFRGvaQhEsNACkheiw9uhRm4NwZx3kc/edit?usp=sharing) | [video](https://youtu.be/krlAqKsdLkw) |
 15 | Dec 3rd | Hasu | PBS on Ethereum Roadmap | [agenda](https://github.com/flashbots/pm/issues/98) | [slides](https://github.com/flashbots/pm/issues/98) | [video](https://us06web.zoom.us/rec/share/H8TQde3Cvik11XcmNXwMqv1x_TFizBFiN8015lRBVcBmclt7I2YJFdrVxurIE0vI.dvEkIZlt359_-9FQ) |
 
+## Community Calls
+
 Flashbots Community Calls is a monthly progress update from the Flashbots crew to provide transparency but also address community questions.  
 | No. |Date |Topic | Agenda | Slides | Recording | Transparency Report |
 |:---|:---|:---|---|---|---|:---|
@@ -21,7 +23,7 @@ Flashbots Community Calls is a monthly progress update from the Flashbots crew t
 2 | Apr 15 | Update & Flashbots Dashboard Preview | [agenda](https://github.com/flashbots/pm/issues/67) | [slides](https://docs.google.com/presentation/d/1224x7eaL9MCP93af8X3qGJ35QuBqNT-OJeGpE10plyQ/edit?usp=sharing) | [recording](https://zoom.us/rec/share/wZ3CnhN-vVoo35J4GAvwrn9xOxg17XsHHu0c2KH9ZUHJHQEvPFN82yaqInf8-q2H.My3Z1vP-rfR_y1Qr) | [March Transparency Report](https://medium.com/flashbots/flashbots-transparency-report-march-2021-d3930b4b98a9) |
 3 | May 13 | Update on v0.2, Flashbots Research & release of Flashbots Dashboard | [agenda](https://github.com/flashbots/pm/issues/73#issue-891158240) | [slides](https://docs.google.com/presentation/d/1hppwu2gUUY80n4mNjjb49GNwITRkkPheuWwgIjvr-EI/edit?usp=sharing) | [recording](https://zoom.us/rec/share/x4jSYPQAoSHH-cBuhxpORNnXAPpdT8ovCLTtlWgcSCR2hLpiFsKtYrjfnMFpTeq9.q6-p05D7zdiHeUdB) | [April Transparency Report](https://medium.com/flashbots/flashbots-transparency-report-april-2021-9fef4d8dde07) |
 
-### Podcast recordings
+## Podcast recordings
 * [Epicenter podcast](https://youtu.be/YfNeKo8FVjc)
 * [zk.fm Podcast](https://youtu.be/p5L39ab7n4k)
 * [Bankless podcast](https://youtu.be/rOVz7dOrGyY)
