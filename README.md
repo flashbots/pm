@@ -24,7 +24,7 @@ We are not your typical project, we are fully remote and our principles are base
 ### Community
 You can interact with Flashbots on Discord and Github. There are dedicated channels on Discord for each of our efforts, we welcome your questions and contributions. Our work is open source and you can follow our progress in each repository of the Flashbots organization.
 
-We hold several recurring community calls: bi-monthly MEV Roasts, monthly-ish research workshops and ad-hoc events. Access past recordings of Roasts and community calls [here](recordings.md), and of research workshops [here](https://github.com/flashbots/mev-research/blob/main/workshops.md).
+We hold several recurring community calls: bi-monthly MEV Roasts, monthly-ish research workshops and ad-hoc MEV events. Access past recordings of Roasts and community calls [here](recordings.md), and of research workshops [here](https://github.com/flashbots/mev-research/blob/main/workshops.md).
 
 ### More information
 Read about [our mission](https://medium.com/flashbots/frontrunning-the-mev-crisis-40629a613752).
