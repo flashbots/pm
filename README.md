@@ -42,3 +42,4 @@ Read about [our mission](https://medium.com/flashbots/frontrunning-the-mev-crisi
 <br> [Blog](https://writings.flashbots.net)
 <br> [Youtube](https://www.youtube.com/channel/UCclbTgsnYUy3vmrptIqCmqQ)
 <br> [Public calendar](https://bit.ly/3uJAHpo)
+<br> [Status](https://status.flashbots.net)
