@@ -16,7 +16,7 @@ The Flashbots organization is funded by long term capital partners with a track 
 ## Join us!
 We are not your typical project, we are fully remote and our principles are based on that of a [pirate hacker collective](https://www.youtube.com/watch?v=T0fAznO1wA8). If you are a self-directed individual who puts collective success above your own and are motivated by solving hard problems with asymmetric impact, you will fit right in.
 
-* [open job positions](https://www.notion.so/flashbots/Flashbots-Job-Board-94d53cb01ef04a9484711dacf18739e3) - full-time roles we're actively recruiting for.
+* [open job positions](https://boards.greenhouse.io/flashbots) - full-time roles we're actively recruiting for.
 * [MEV research fellowship](https://github.com/flashbots/mev-research/blob/main/grants.md) - we issue research grants to flashbots research proposals submitters.
 * flashbots part-time contractor - become a part-time contractor in Flashbots and join one of our ongoing projects. Reach out to the team to learn more!
 * nothing fits in the above? reach out at jobs@flashbots.net
