@@ -27,16 +27,16 @@ We are not your typical project, we are fully remote and our principles are base
 * For anything else, please reach out to us at [jobs@flashbots.net](mailto:jobs@flashbots.net)!
 
 **Useful links**
-🌐 Website: https://flashbots.net
-📄 Docs: https://docs.flashbots.net
-📡 Status: https://status.flashbots.net
-💬 Discord: https://discord.gg/flashbots
-💡 Forum: https://collective.flashbots.net
-📝 Writings: https://writings.flashbots.net
-⚡ MEV-Boost: https://boost.flashbots.net
-🗓️ Calendar: https://calendar.flashbots.net
-🤍 Whitehat: https://whitehat.flashbots.net
-🛠️ Join us: https://boards.greenhouse.io/flashbots
-💭 New to MEV?: https://docs.flashbots.net/new-to-mev
-🎛️ Flashbots Dashboard https://transparency.flashbots.net/
-🎯 Our Mission: https://writings.flashbots.net/writings/frontrunning-mev-crisis
+* 🌐 Website: https://flashbots.net
+* 📄 Docs: https://docs.flashbots.net
+* 📡 Status: https://status.flashbots.net
+* 💬 Discord: https://discord.gg/flashbots
+* 💡 Forum: https://collective.flashbots.net
+* 📝 Writings: https://writings.flashbots.net
+* ⚡ MEV-Boost: https://boost.flashbots.net
+* 🗓️ Calendar: https://calendar.flashbots.net
+* 🤍 Whitehat: https://whitehat.flashbots.net
+* 🛠️ Join us: https://boards.greenhouse.io/flashbots
+* 💭 New to MEV?: https://docs.flashbots.net/new-to-mev
+* 🎛️ Flashbots Dashboard https://transparency.flashbots.net/
+* 🎯 Our Mission: https://writings.flashbots.net/writings/frontrunning-mev-crisis
