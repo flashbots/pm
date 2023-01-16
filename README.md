@@ -1,45 +1,42 @@
 # Flashbots
 
-Flashbots is a research and development organization working on mitigating the negative externalities of Maximal Extractable Value (MEV) extraction techniques and avoiding the existential risks MEV could cause to stateful blockchains like Ethereum. Our primary focus is to enable a permissionless, transparent, and fair ecosystem for MEV extraction. This falls under three goals: Bringing Transparency to MEV Activity, Democratizing Access to MEV Revenue and Enabling Fair Redistribution of MEV Revenue.
+Flashbots is a research and development organization working on mitigating the negative externalities of Maximal Extractable Value (MEV) and avoiding the existential risks MEV could cause to stateful blockchains like Ethereum. Our primary focus is to enable a *permissionless*, *transparent*, and *sustainable* ecosystem for MEV, via a three-pronged approach: 
+
+* **Illuminate**: Bringing transparency to MEV activity.
+* **Democratize**: Democratizing access to MEV revenue.
+* **Distribute**: Enabling sustainable distribution of MEV revenue.
 
 Our efforts are separated into three sub-organizations:
-* **Product**: an engineering effort to build products to fulfill our mission. This includes the [Flashbots Auction](https://docs.flashbots.net/flashbots-auction/overview) with the Flashbots Relay, the [Flashbots Protect RPC](https://docs.flashbots.net/flashbots-protect/overview), [MEV-Inspect](https://docs.flashbots.net/flashbots-data/mev-inspect-py/overview), [MEV-Explore](https://explore.flashbots.net) and [MEV-Boost](https://ethresear.ch/t/mev-boost-merge-ready-flashbots-architecture/11177).
-* **Coordination**: an organizational effort to streamline operational processes, interface with external teams in the ecosystem and scale ourselves to maximize the organization's impact.
-* **Research**: an open, transparent, and [collaborative research effort](https://github.com/flashbots/mev-research) to tackle short and long term research questions relevant to MEV.
+* **Product**: builds core infrastructure and ecosystem tooling that redefines the block production supply chain. This includes [MEV-Boost](https://boost.flashbots.net/), [SUAVE](https://writings.flashbots.net/the-future-of-mev-is-suave) as well as [Flashbots Protect RPC](https://docs.flashbots.net/flashbots-protect/overview), [mev-geth](https://github.com/flashbots/mev-geth), [MEV-Inspect](https://docs.flashbots.net/flashbots-data/mev-inspect-py/overview) and [MEV-Explore](https://explore.flashbots.net).
+* **Research**: an open, transparent, and [collaborative research effort](https://github.com/flashbots/mev-research) that explores MEV market dynamics and blockchain design challenges at the intersection of economics, security, and cryptography. To fuel the collaborative nature of our research, anybody can submit a [Flashbots Research Proposal](https://github.com/flashbots/mev-research/blob/main/process.md) (FRPs) and might become eligible for a grant.
+* **Coordination**: an organizational effort to streamline operational processes, interface with external teams in the ecosystem and scale ourselves to maximize our impact.
 
-Flashbots Research and Product are tightly-coupled dual engines that propel the organization in a phased approach:
-- Long-term oriented research efforts spec out and update our roadmap, define our organization’s phases and identify key milestones associated with each of them;
-- Milestone-oriented engineering efforts ship core infrastructure and ecosystem tools, while collecting data and producing other artifacts that feed back into research.
+Flashbots Research and Product are tightly-coupled dual engines that propel our organization forward in a phased approach:
+* Long-term oriented research efforts spec out and update our roadmap, define our organization’s phases and identify key milestones.
+* Milestone-oriented engineering efforts ship core infrastructure and ecosystem tools while collecting data and other artifacts that feed back into research.
 
-The Flashbots organization is funded by long term capital partners with a track record of alignment with the ecosystem. Our current capital partner is [Paradigm](https://paradigm.xyz/).
-
-## Join us!
-We are not your typical project, we are fully remote and our principles are based on that of a [pirate hacker collective](https://www.youtube.com/watch?v=T0fAznO1wA8). If you are a self-directed individual who puts collective success above your own and are motivated by solving hard problems with asymmetric impact, you will fit right in.
-
-* [open job positions](https://boards.greenhouse.io/flashbots) - full-time roles we're actively recruiting for.
-* [MEV research fellowship](https://github.com/flashbots/mev-research/blob/main/grants.md) - we issue research grants to flashbots research proposals submitters.
-* flashbots part-time contractor - become a part-time contractor in Flashbots and join one of our ongoing projects. Reach out to the team to learn more!
-* nothing fits in the above? reach out at jobs@flashbots.net
+Our work is open source and you can follow our progress in each respective repository of the Flashbots organization. Anyone is welcome to comment on an issue or pick it up entirely.
 
 ### Community
-You can interact with Flashbots on Discord and Github. There are dedicated channels on Discord for each of our efforts, we welcome your questions and contributions. Our work is open source and you can follow our progress in each repository of the Flashbots organization.
+The best way to interact with the Flashbots community is through our [forum](https://collective.flashbots.net/), which is our central communication platform for conversations, announcements and information sharing. We also publish monthly [transparency reports](https://collective.flashbots.net/search?q=transparancy%20report%20%23ship%20in%3Atitle) that aggregates information and provides summaries on everything Flashbots and MEV.
 
-We hold several recurring community calls: bi-monthly MEV Roasts, monthly-ish research workshops and ad-hoc MEV events. Access past recordings of Roasts and community calls [here](recordings.md), and of research workshops [here](https://github.com/flashbots/mev-research/blob/main/workshops.md).
+### Join us!
+We are not your typical project, we are fully remote and our principles are based on that of a [pirate hacker collective](https://www.youtube.com/watch?v=T0fAznO1wA8). If you are a self-directed individual who puts collective success above your own and is motivated by solving challenging problems with asymmetric impact, you will fit right in. 
+* [**Open job positions**](https://boards.greenhouse.io/flashbots): Check out the list of full-time roles we're actively recruiting for.
+* [**MEV research fellowship**](https://github.com/flashbots/mev-research/blob/main/grants.md):  We issue research grants to Flashbots Research Proposal submitters. 
+* For anything else, please reach out to us at [jobs@flashbots.net](mailto:jobs@flashbots.net)!
 
-### More information
-Read about [our mission](https://medium.com/flashbots/frontrunning-the-mev-crisis-40629a613752).
-<br> New to MEV? [Here's where to get started](https://docs.flashbots.net/new-to-mev).
-<br> Protect yourself against frontrunning with the [Flashbots Protect RPC](https://docs.flashbots.net/flashbots-protect/overview).
-<br> Use the Flashbots Auction [as a searcher](https://docs.flashbots.net/flashbots-auction/searchers/quick-start).
-<br> Use the Flashbots Auction [as a miner](https://docs.flashbots.net/flashbots-auction/miners/quick-start).
-<br> Explore MEV activity with [MEV-explore](https://explore.flashbots.net) and the [MEV dashboard](https://dashboard.flashbots.net).
-<br> Run [MEV-Inspect](https://github.com/flashbots/mev-inspect-py) to query Ethereum MEV data.
-
-**Other Links**
-<br> [Discord](https://discord.gg/7hvTycdNcK)
-<br> [Documentation](https://docs.flashbots.net)
-<br> [Transparency reports](https://writings.flashbots.net/writings/tags/transparency-report)
-<br> [Blog](https://writings.flashbots.net)
-<br> [Youtube](https://www.youtube.com/channel/UCclbTgsnYUy3vmrptIqCmqQ)
-<br> [Public calendar](https://bit.ly/3uJAHpo)
-<br> [Status](https://status.flashbots.net)
+**Useful links**
+🌐 Website: https://flashbots.net
+📄 Docs: https://docs.flashbots.net
+📡 Status: https://status.flashbots.net
+💬 Discord: https://discord.gg/flashbots
+💡 Forum: https://collective.flashbots.net
+📝 Writings: https://writings.flashbots.net
+⚡ MEV-Boost: https://boost.flashbots.net
+🗓️ Calendar: https://calendar.flashbots.net
+🤍 Whitehat: https://whitehat.flashbots.net
+🛠️ Join us: https://boards.greenhouse.io/flashbots
+💭 New to MEV?: https://docs.flashbots.net/new-to-mev
+🎛️ Flashbots Dashboard https://transparency.flashbots.net/
+🎯 Our Mission: https://writings.flashbots.net/writings/frontrunning-mev-crisis
