@@ -31,6 +31,7 @@ We are not your typical project, we are fully remote and our principles are base
 * 📄 Docs: https://docs.flashbots.net
 * 📡 Status: https://status.flashbots.net
 * 💬 Discord: https://discord.gg/flashbots
+* 📺 YouTube: https://www.youtube.com/@flashbots
 * 💡 Forum: https://collective.flashbots.net
 * 📝 Writings: https://writings.flashbots.net
 * ⚡ MEV-Boost: https://boost.flashbots.net
