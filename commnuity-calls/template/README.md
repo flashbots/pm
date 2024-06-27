@@ -1,16 +1,9 @@
-# Example Working Group
+# Template
 
-## Purpose
-To showcase the structure associated with a working group.
+The purpose of the template community call is to provide a template for running your own community call.
 
-## Organizer
-[John Doe](https://x.com/johndoe)
+## Meetings
 
-## Meeting Cadence
-Weekly on Thursdays at 3 PM UTC
-
-## Milestones
-1. Initial project setup - MM/DD/YYYY
-2. First feature implementation - MM/DD/YYYY
-3. Beta release - MM/DD/YYYY
-4. Public launch - MM/DD/YYYY
+| No. |Date | Host | Topic | Agenda | Notes | Recording |
+|:---|:---|:---|---|---|---|:---|
+1 | Today | Liebniz | Example Topic | [agenda](https://example.com) | [write up](https://example.com) | [video](https://example.com) |

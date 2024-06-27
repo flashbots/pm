@@ -4,10 +4,10 @@ A Community Call is a flash organization of humans and robots devoted to explori
 
 ## ☀️ Active Community Calls
 
-| Name | Organizer       | Meeting Cadence    | Purpose                     |
-|--------------------|-----------------|--------------------|--------------------------------|
-| [Flashwares](./flashwares/README.md)         | [SUAVE Andromeda]()     | Seasonal Installments   | TEE Education and Design Discussions   |
-| [SUAPP Developer Streams](./suapp-developer-streams/README.md)         | [Brock](https://x.com/zeroXbrock/)     | Monthly    | SUAPP Development Office Hours and Tutorials   |
+| Name | Organizer       | Purpose   |  Cadence |  Calendar |
+|--------------------|-----------------|--------------------|------------------|-------------------|
+| [Flashwares](./flashwares/README.md)         | [SUAVE Andromeda]()     | Seasonal Installments   | TEE Education and Design Discussions   | TODO |
+| [SUAPP Developer Streams](./suapp-developer-streams/README.md)         | [Brock](https://x.com/zeroXbrock/)     | Monthly    | SUAPP Development Office Hours and Tutorials   | TODO |
 
 ## 🧊 Retired Community Calls
 
