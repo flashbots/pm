@@ -17,4 +17,4 @@ A Community Call is a flash organization of humans and robots devoted to explori
 
 
 ## Starting Your Own Community Call
-To start your own community call in this repo or to contribute to an existing group, see the [process document](process.md).
+Want to start your own community call? Open a Pull Request!
