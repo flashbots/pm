@@ -1,15 +1,19 @@
 # Flashbots
 
-Flashbots is a research and development organization working on mitigating the negative externalities of Maximal Extractable Value (MEV) and avoiding the existential risks MEV could cause to stateful blockchains like Ethereum. Our primary focus is to enable a *permissionless*, *transparent*, and *sustainable* ecosystem for MEV, via a three-pronged approach: 
+Flashbots is a research and development organization formed to mitigate the negative externalities posed by Maximal Extractable Value (MEV) to stateful blockchains, starting with Ethereum. 
+
+## Our Work
+Our primary focus is to enable a *permissionless*, *transparent*, and *sustainable* ecosystem for MEV, via a three-pronged approach: 
 
 * **Illuminate**: Bringing transparency to MEV activity.
 * **Democratize**: Democratizing access to MEV revenue.
 * **Distribute**: Enabling sustainable distribution of MEV revenue.
 
-Our efforts are separated into three sub-organizations:
-* **Product**: builds core infrastructure and ecosystem tooling that redefines the block production supply chain. This includes [MEV-Boost](https://boost.flashbots.net/), [SUAVE](https://writings.flashbots.net/the-future-of-mev-is-suave) as well as [Flashbots Protect RPC](https://docs.flashbots.net/flashbots-protect/overview), [mev-geth](https://github.com/flashbots/mev-geth), [MEV-Inspect](https://docs.flashbots.net/flashbots-data/mev-inspect-py/overview) and [MEV-Explore](https://explore.flashbots.net).
-* **Research**: an open, transparent, and [collaborative research effort](https://github.com/flashbots/mev-research) that explores MEV market dynamics and blockchain design challenges at the intersection of economics, security, and cryptography. To fuel the collaborative nature of our research, anybody can submit a [Flashbots Research Proposal](https://github.com/flashbots/mev-research/blob/main/process.md) (FRPs) and might become eligible for a grant.
-* **Coordination**: an organizational effort to streamline operational processes, interface with external teams in the ecosystem and scale ourselves to maximize our impact.
+
+## Our Dual Engines
+Product & research are the semi-autonomous dual engines that propel our organization forward:
+- [Flashbots Product](https://docs.flashbots.net/) builds core infrastructure and ecosystem tooling that redefine the block production supply chain across blockchains.
+- [Flashbots Research](https://github.com/flashbots/mev-research) explores MEV market dynamics and blockchain design challenges at the intersection of economics, security, and cryptography.
 
 Flashbots Research and Product are tightly-coupled dual engines that propel our organization forward in a phased approach:
 * Long-term oriented research efforts spec out and update our roadmap, define our organization’s phases and identify key milestones.
@@ -17,10 +21,10 @@ Flashbots Research and Product are tightly-coupled dual engines that propel our 
 
 Our work is open source and you can follow our progress in each respective repository of the Flashbots organization. Anyone is welcome to comment on an issue or pick it up entirely.
 
-### Community
-The best way to interact with the Flashbots community is through our [forum](https://collective.flashbots.net/), which is our central communication platform for conversations, announcements and information sharing. We also publish monthly [transparency reports](https://collective.flashbots.net/search?q=transparancy%20report%20%23ship%20in%3Atitle) that aggregates information and provides summaries on everything Flashbots and MEV.
+## Community
+The best way to interact with the Flashbots community is through our [forum](https://collective.flashbots.net/), which is our central communication platform for conversations, announcements and information sharing. Additionally check out our [Community Calls](./commnuity-calls/README.md)!
 
-### Join us!
+## Join us!
 We are not your typical project, we are fully remote and our principles are based on that of a [pirate hacker collective](https://www.youtube.com/watch?v=T0fAznO1wA8). If you are a self-directed individual who puts collective success above your own and is motivated by solving challenging problems with asymmetric impact, you will fit right in. 
 * [**Open job positions**](https://boards.greenhouse.io/flashbots): Check out the list of full-time roles we're actively recruiting for.
 * [**MEV research fellowship**](https://github.com/flashbots/mev-research/blob/main/grants.md):  We issue research grants to Flashbots Research Proposal submitters. 
@@ -29,12 +33,12 @@ We are not your typical project, we are fully remote and our principles are base
 **Useful links**
 * 🌐 Website: https://flashbots.net
 * 📄 Docs: https://docs.flashbots.net
+* ☀️ SUAVE Docs: https://suave-alpha.flashbots.net/
 * 📡 Status: https://status.flashbots.net
 * 💬 Discord: https://discord.gg/flashbots
 * 💡 Forum: https://collective.flashbots.net
 * 📝 Writings: https://writings.flashbots.net
 * ⚡ MEV-Boost: https://boost.flashbots.net
-* 🗓️ Calendar: https://calendar.flashbots.net
 * 🤍 Whitehat: https://whitehat.flashbots.net
 * 🛠️ Join us: https://boards.greenhouse.io/flashbots
 * 💭 New to MEV?: https://docs.flashbots.net/new-to-mev
