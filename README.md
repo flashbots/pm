@@ -18,7 +18,7 @@ Flashbots Research and Product are tightly-coupled dual engines that propel our 
 Our work is open source and you can follow our progress in each respective repository of the Flashbots organization. Anyone is welcome to comment on an issue or pick it up entirely.
 
 ## Community
-The best way to interact with the Flashbots community is through our [forum](https://collective.flashbots.net/), which is our central communication platform for conversations, announcements and information sharing. Additionally we hold recurring [community calls](./commnuity-calls/README.md) on a variety of topics!
+The best way to interact with the Flashbots community is through our [forum](https://collective.flashbots.net/), which is our central communication platform for conversations, announcements and information sharing. Additionally we hold recurring [community calls](./community-calls/README.md) on a variety of topics!
 
 ## Join us!
 We are not your typical project, we are fully remote and our principles are based on that of a [pirate hacker collective](https://www.youtube.com/watch?v=T0fAznO1wA8). If you are a self-directed individual who puts collective success above your own and is motivated by solving challenging problems with asymmetric impact, you will fit right in. 
@@ -35,6 +35,7 @@ We are not your typical project, we are fully remote and our principles are base
 * 💡 Forum: https://collective.flashbots.net
 * 📝 Writings: https://writings.flashbots.net
 * ⚡ MEV-Boost: https://boost.flashbots.net
+* 🗓️ Calendar: https://calendar.flashbots.net
 * 🤍 Whitehat: https://whitehat.flashbots.net
 * 🛠️ Join us: https://www.flashbots.net/jobs
 * 💭 New to MEV?: https://docs.flashbots.net/new-to-mev
