@@ -6,8 +6,9 @@ A Community Call is a flash organization of humans and robots devoted to explori
 
 | Name | Organizer       | Purpose   |  Cadence |  Calendar |
 |--------------------|-----------------|--------------------|------------------|-------------------|
-| [Flashwares](./flashwares/README.md)         | [SUAVE Andromeda]()     |  TEE Education and Design Discussions  | Burst Installments   | TODO |
-| [SUAPP Developer Streams](./suapp-developer-streams/README.md)         | [Brock](https://x.com/zeroXbrock/)     | SUAPP Development Office Hours and Tutorials   |  Monthly  | TODO |
+| [Flashwares](./flashwares/README.md)         | [SUAVE Andromeda]()     |  TEE Education and Design Discussions  | Burst Installments   | [Forum](https://collective.flashbots.net/tag/flashwares) |
+| [SUAVE.dev](./suapp-developer-streams/README.md)         | [cryptowanderer](https://x.com/cryptowanderer) & [Brock](https://x.com/zeroXbrock/)     | SUAPP Development Office Hours and Tutorials   |  Monthly  | [Community Calender](http://calendar.flashbots.net/) |
+| [All Core Devs](./All-Core-Devs/README.md)         | [dmarz](https://x.com/DistributedMarz) | Core Protocol Development Discussions   |  Monthly  | [Community Calender](http://calendar.flashbots.net/) |
 
 ## 🧊 Retired Community Calls
 
@@ -16,5 +17,5 @@ A Community Call is a flash organization of humans and robots devoted to explori
 | [MEV Roasts](./mev-roasts/README.md)         | [Flashbots](https://writings.flashbots.net/)     |  Communication bridge between Flashbots and the broader community   |
 
 
-## Starting Your Own Community Call
-Want to start your own community call? Open a Pull Request!
+## 🌐 Starting Your Own Community Call
+Want to start your own community call? Copy the [template](./template/) and open a Pull Request!
