@@ -7,7 +7,7 @@ A Community Call is a flash organization of humans and robots devoted to explori
 | Name | Organizer       | Purpose   |  Cadence |  Calendar |
 |--------------------|-----------------|--------------------|------------------|-------------------|
 | [Flashwares](./flashwares/README.md)         | [SUAVE Andromeda]()     |  TEE Education and Design Discussions  | Burst Installments   | [Forum](https://collective.flashbots.net/tag/flashwares) |
-| [SUAVE.dev](./suapp-developer-streams/README.md)         | [cryptowanderer](https://x.com/cryptowanderer) & [Brock](https://x.com/zeroXbrock/)     | SUAPP Development Office Hours and Tutorials   |  Monthly  | [Community Calender](http://calendar.flashbots.net/) |
+| [SUAVE.dev](./suave-dev/README.md)         | [cryptowanderer](https://x.com/cryptowanderer) & [Brock](https://x.com/zeroXbrock/)     | SUAPP Development Office Hours and Tutorials   |  Monthly  | [Community Calender](http://calendar.flashbots.net/) |
 | [All Core Devs](./All-Core-Devs/README.md)         | [dmarz](https://x.com/DistributedMarz) | Core Protocol Development Discussions   |  Monthly  | [Community Calender](http://calendar.flashbots.net/) |
 
 ## 🧊 Retired Community Calls
