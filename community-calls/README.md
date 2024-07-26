@@ -1,6 +1,6 @@
 # Flashbots Community Calls
 
-A Community Call is a flash organization of humans and robots devoted to exploring, designing, and synthesizing various aspects of stateful blockchains. The goal of a community call is to have design and informational discussions in the public and also produce relevant technical and engineering documents. These documents include design space discussion recordings, protocol standards, best practices, and various informational documents. This process is loosely inspired by the mission of the [IETF](https://www.ietf.org/about/introduction/#mission) and the [Ethereum Project Management](https://github.com/ethereum/pm) process.
+A Community Call is a flash organization of humans and robots devoted to exploring, designing, and synthesizing various aspects of stateful blockchains. The primary goal of a community goal is to facilitate public design and informational discussions while producing relevant technical and engineering documents. These documents encompass design space discussion recordings, protocol standards, best practices, and a variety of informational materials. This process is loosely inspired by the mission of the [IETF](https://www.ietf.org/about/introduction/#mission) and the [Ethereum Project Management](https://github.com/ethereum/pm) process.
 
 ## ☀️ Active Community Calls
 
