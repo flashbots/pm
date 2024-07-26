@@ -1,12 +1,12 @@
 # Flashbots Community Calls
 
-A Community Call is a flash organization of humans and robots devoted to exploring, designing, and synthesizing various aspects of stateful blockchains. The goal of a community call is to produce high-quality, relevant technical and engineering documents that influence the way people design, use, and implement blockchain protocols. These documents include design space discussion recordings, protocol standards, best practices, and various informational documents. This process is loosely inspired by the mission of the [IETF](https://www.ietf.org/about/introduction/#mission) and the [Ethereum Project Management](https://github.com/ethereum/pm) process.
+A Community Call is a flash organization of humans and robots devoted to exploring, designing, and synthesizing various aspects of stateful blockchains. The goal of a community call is to have design and informational discussions in the public and also produce relevant technical and engineering documents. These documents include design space discussion recordings, protocol standards, best practices, and various informational documents. This process is loosely inspired by the mission of the [IETF](https://www.ietf.org/about/introduction/#mission) and the [Ethereum Project Management](https://github.com/ethereum/pm) process.
 
 ## ☀️ Active Community Calls
 
 | Name | Organizer       | Purpose   |  Cadence |  Calendar |
 |--------------------|-----------------|--------------------|------------------|-------------------|
-| [Flashwares](./flashwares/README.md)         | [SUAVE Andromeda]()     |  TEE Education and Design Discussions  | Burst Installments   | [Forum](https://collective.flashbots.net/tag/flashwares) |
+| [Flashwares](./flashwares/README.md)         | [SUAVE Andromeda]()     |  TEE Education and Design Discussions  | Burst Installments   | [Community Calender](http://calendar.flashbots.net/) |
 | [SUAVE.dev](./suave-dev/README.md)         | [cryptowanderer](https://x.com/cryptowanderer) & [Brock](https://x.com/zeroXbrock/)     | SUAPP Development Office Hours and Tutorials   |  Monthly  | [Community Calender](http://calendar.flashbots.net/) |
 | [All Core Devs](./All-Core-Devs/README.md)         | [dmarz](https://x.com/DistributedMarz) | Core Protocol Development Discussions   |  Monthly  | [Community Calender](http://calendar.flashbots.net/) |
 
