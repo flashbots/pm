@@ -26,7 +26,7 @@ The best way to interact with the Flashbots community is through our [forum](htt
 
 ## Join us!
 We are not your typical project, we are fully remote and our principles are based on that of a [pirate hacker collective](https://www.youtube.com/watch?v=T0fAznO1wA8). If you are a self-directed individual who puts collective success above your own and is motivated by solving challenging problems with asymmetric impact, you will fit right in. 
-* [**Open job positions**](https://boards.greenhouse.io/flashbots): Check out the list of full-time roles we're actively recruiting for.
+* [**Open job positions**](https://www.flashbots.net/jobs): Check out the list of full-time roles we're actively recruiting for.
 * [**MEV research fellowship**](https://github.com/flashbots/mev-research/blob/main/grants.md):  We issue research grants to Flashbots Research Proposal submitters. 
 * For anything else, please reach out to us at [jobs@flashbots.net](mailto:jobs@flashbots.net)!
 
