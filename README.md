@@ -1,6 +1,6 @@
 # Flashbots
 
-Flashbots is a research and development organization working on mitigating the negative externalities of Maximal Extractable Value (MEV) and avoiding the existential risks MEV could cause to stateful blockchains like Ethereum. Our primary focus is to enable a *permissionless*, *transparent*, and *sustainable* ecosystem for MEV, via a three-pronged approach: 
+[Flashbots](https://www.flashbots.net/) is a research and development organization working on mitigating the negative externalities of Maximal Extractable Value (MEV) and avoiding the existential risks MEV could cause to stateful blockchains like Ethereum. Our primary focus is to enable a *permissionless*, *transparent*, and *sustainable* ecosystem for MEV, via a three-pronged approach: 
 
 * **Illuminate**: Bringing transparency to MEV activity.
 * **Democratize**: Democratizing access to MEV revenue.
